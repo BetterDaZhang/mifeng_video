@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code09" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/code3"
+            android:text="@string/membercenter_text1"
+            android:textSize="12dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/boss_noad"
+                    android:gravity="center"
+                    android:textColor="@color/code3"
+                    android:text="@string/membercenter_noad"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/boss_speed"
+                    android:gravity="center"
+                    android:textColor="@color/code3"
+                    android:text="@string/membercenter_speed"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/boss_hd"
+                    android:gravity="center"
+                    android:textColor="@color/code3"
+                    android:text="@string/membercenter_hd"
+                    android:textSize="13dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/boss_vip"
+                    android:gravity="center"
+                    android:textColor="@color/code3"
+                    android:text="@string/membercenter_vip"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/boss_identity"
+                    android:gravity="center"
+                    android:textColor="@color/code3"
+                    android:text="@string/membercenter_identity"
+                    android:textSize="13dp" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/code03" />
+
+        <LinearLayout
+            android:id="@+id/menulist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/code03" />
+
+        <TextView
+            android:id="@+id/tv_cdkey"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/code01"
+            android:drawableLeft="@drawable/boss_cdkey"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/mine_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dip"
+            android:text="@string/title_cdkey"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/code03" />
+    </LinearLayout>
+
+</ScrollView>

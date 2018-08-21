@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app -->
+    <string name="app_name">自动打包</string>
+    <string name="app_version">1.0</string>
+    <string name="app_id">1</string>
+    <!-- <string name="tenant_id">1111111532</string> -->
+    <string name="template">100003</string>
+     <string name="tenant_id">400001</string> 
+    <!--<string name="tenant_id">400712</string>-->
+    <!-- 歌华影视 -->
+    <!-- <string name="tenant_id">148893</string> -->
+    <!-- 天府Tv -->
+
+    <string name="qq_appid">1</string>
+    <string name="app_channel">letv</string>
+    <string name="base_neterror">网络请求失败</string>
+    <string name="base_networkerror">当前网络不可用，请检查您的网络设置</string>
+    <string name="base_no_network">网络未连接</string>
+    <string name="base_networkerror2">请检查网络状态后重试</string>
+    <string name="base_retry">重新再试</string>
+    <string name="base_authtimeout">您的登录状态已失效，请重新登录</string>
+    <string name="base_dataerror">数据加载失败</string>
+    <string name="base_dataerror2">请稍后重试</string>
+    <string name="base_nodata">暂无数据</string>
+    <string name="base_nodata2">请刷新重试</string>
+    <!-- 图片的字 -->
+    <string name="boss_open">开通</string>
+    <string name="boss_order_pay">确认支付</string>
+    <string name="cdkey_active">激活</string>
+    <string name="mine_getvip">开通会员</string>
+    <string name="mine_renew">续费</string>
+    <string name="mine_vip_renew">会员续费</string>
+    <string name="play_backtomobile">恢复到手机观看</string>
+    <string name="play_addetail">了解详情</string>
+    <string name="play_choose">列表</string>
+    <string name="play_local">本地</string>
+    <string name="play_more">其他</string>
+    <string name="play_screen">投屏</string>
+    <string name="play_barrage">弹幕</string>
+    <string name="play_download">缓存</string>
+    <string name="play_share">分享</string>
+
+    <!-- update -->
+    <string name="downloading">下载中&#8230;</string>
+    <string name="downloadupadte">下载更新</string>
+    <string name="alreadyinorder">已存在此下载任务</string>
+    <string name="downloadok">下载完成</string>
+    <string name="downlaodfailed">下载失败</string>
+    <string name="gotnewversion">发现新版本%s</string>
+    <!-- 第三方 -->
+    <string name="noweichat">您还没有安装微信客户端</string>
+    <string name="noblog">您还没有安装微博客户端</string>
+    <string name="share_ok">分享成功</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="share_error">错误:%s</string>
+    <string name="userrefuse">用户拒绝授权！</string>
+    <string name="usercancel">用户取消授权！</string>
+    <string name="sharetext">分享</string>
+    <!-- boss -->
+    <string name="membercenter_text1">适合TV、Pad、手机、电脑多屏共享</string>
+    <string name="membercenter_noad">无广告</string>
+    <string name="membercenter_speed">播放速度</string>
+    <string name="membercenter_hd">高清画质</string>
+    <string name="membercenter_vip">VIP影片</string>
+    <string name="membercenter_identity">身份标示</string>
+    <string name="title_cdkey">兑换码</string>
+    <string name="cdkey_notnull">兑换码不能为空</string>
+    <string name="cdkey_faild">兑换码激活失败</string>
+    <string name="cdkey_ok">兑换码激活成功</string>
+    <string name="orderid">订单编号:%s</string>
+    <string name="acttime">订单时间:%s</string>
+    <string name="paynum">消费金额:￥%s</string>
+    <string name="paystatus">消费状态:%s</string>
+    <string name="pay_ok">成功</string>
+    <string name="pay_faild">未支付</string>
+    <string name="pay_all">全部</string>
+    <string name="title_consume">消费记录</string>
+    <string name="paramserror">参数填写不完整,请填写完整</string>
+    <string name="pricerange">总金额应在0~999999.99之间 </string>
+    <string name="title_member">会员中心</string>
+    <string name="order_information">订单详情</string>
+    <string name="order_pay">确认支付</string>
+    <string name="order_price">应付金额：</string>
+    <string name="order_price_rmb">元</string>
+    <string name="order_num">订单编号：</string>
+    <string name="order_expire">有效期：</string>
+    <string name="order_expire_day">天</string>
+    <string name="no_pay">该APP未开通支付功能</string>
+    <string name="end_date">%s到期</string>
+    <string name="continuepay">继续支付</string>
+
+    <!-- 主页 -->
+    <string name="tab1">首页</string>
+    <string name="tab2">频道</string>
+    <string name="tab3">发现</string>
+    <string name="tab4">直播</string>
+    <string name="tab5">我的</string>
+    <string name="confirm">确定</string>
+    <string name="exittip">再按一次退出程序</string>
+    <!-- 频道 -->
+    <string name="channel_title">频道管理</string>
+    <!-- 搜索 -->
+    <string name="search">搜索</string>
+    <string name="search_nper">期数</string>
+    <string name="search_failed">搜索相关内容失败</string>
+    <string name="search_contentfailed">获取搜索内容失败</string>
+    <string name="search_nomore">没有更多数据了</string>
+    <string name="search_noinput">没有输入任何内容</string>
+    <string name="search_allover">全部</string>
+    <string name="search_showtime">上映时间</string>
+    <string name="search_starring">主演</string>
+    <string name="search_director">导演</string>
+
+    <!-- 首页 -->
+    <string name="recommend_search_hint">请输入关键词</string>
+    <string name="recommend_foot_title">新的世界</string>
+    <string name="subject_title">专题</string>
+    <string name="channel_noinput">没有输入任何内容</string>
+    <!-- “我的” 页面中定义的字符串 -->
+    <string name="second">秒</string>
+    <string name="mine_retrieve_password">找回密码</string>
+    <string name="mine_retrieve_pwd_success">设置密码成功</string>
+    <string name="register_checkcode">获取验证码</string>
+    <string name="login_mine">点击登录</string>
+    <string name="mine_get_vip">开通会员</string>
+    <string name="collect_text">收藏</string>
+    <string name="message_text">消息</string>
+    <string name="history_text">最近在看</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_fankui">用户反馈</string>
+    <string name="confrim_password">确认密码</string>
+    <string name="new_password">新密码：</string>
+    <string name="old_password">旧密码：</string>
+    <string name="password_notempty">密码不能为空</string>
+    <string name="confirm_error">您两次输入的密码不一致</string>
+    <string name="channge_password">更改密码</string>
+    <string name="resetpass_ok">重置密码成功</string>
+    <string name="resetpass_failed">重置密码失败</string>
+    <string name="logout">退出</string>
+    <string name="logout_isclearrecord">是否将此账号的观看记录保存在本机中?</string>
+    <string name="mine_dialog_ensure">确定</string>
+    <string name="mine_dialog_cancel">取消</string>
+    <string name="mine_dialog_save">保存</string>
+    <string name="mine_dialog_dont_save">不保存</string>
+    <string name="mine_male">男</string>
+    <string name="mine_famale">女</string>
+    <string name="mine_secret">保密</string>
+    <string name="mine_allscreen_vip_endtime_text">(到期日期</string>
+    <string name="mine_mobile_vip_endtime_text">移动影视会员(到期日期</string>
+    <string name="mine_password_error">密码格式错误：请输入6-20位字母，数字或字符</string>
+    <string name="mine_password_hint">请输入6-20位字母，数字或字符</string>
+    <string name="mine_nickname_illegal_toast">昵称非法：4-32个字符，支持中英文、数字或“-”。注意：不能用纯数字和或“-”</string>
+    <string name="mine_nickname_hint">4-32个字符，支持中英文、数字或“-”。注意：不能用纯数字和或“-”</string>
+    <string name="mine_consume_record">消费记录</string>
+    <string name="mine_change_password">修改密码</string>
+    <string name="mine_sex_with_colon">性别</string>
+    <string name="mine_nickname_with_colon">昵称</string>
+    <string name="mine_vip_full_screen">全屏影视会员(到期日期2018-06-12)</string>
+    <string name="mine_change_headimg">更换头像</string>
+    <string name="mine_vip_center">会员中心</string>
+    <string name="mine_subscibe">订阅</string>
+    <string name="mine_offline_video">离线缓存</string>
+    <string name="mine_play_record">观看记录</string>
+    <string name="mine_allow_wifi_download">允许在非wifi网络下缓存</string>
+    <string name="mine_receive_push_msg">接受推送消息</string>
+    <string name="mine_clear_msg">清理缓存</string>
+    <string name="mine_about_us">关于我们</string>
+    <string name="mine_feedback">意见反馈</string>
+    <string name="input_content">请输入反馈内容</string>
+    <string name="qqq">谢谢您的建议</string>
+    <string name="comit_failed">用户反馈提交失败</string>
+    <string name="mine_logout">注销</string>
+    <string name="mine_select_all_or_none">全选/取消全选</string>
+    <string name="mine_no_play_records">暂无观看记录</string>
+    <string name="mine_not_play_videos">您还没有观看任何视频</string>
+    <string name="mine_no_collections">暂无收藏记录</string>
+    <string name="mine_no_collection_videos">您还没有收藏任何视频</string>
+    <string name="mine_edit">编辑</string>
+    <string name="mine_delete_with_bracket">删除(</string>
+    <string name="mine_delete_failed">删除失败</string>
+    <string name="mine_delete_success">删除成功</string>
+    <string name="mine_clear_cache_failed">清除缓存失败</string>
+    <string name="mine_not_save">不保存</string>
+    <string name="mine_save">保存</string>
+    <string name="mine_no_offline">暂无下载记录</string>
+    <string name="mine_waiting">等待中</string>
+    <string name="mine_downloading">下载中</string>
+    <string name="mine_stopped">已暂停</string>
+    <string name="mine_downloading_video_num">个视频/</string>
+    <string name="mine_auto_jump">自动跳过片头片尾</string>
+    <string name="mine_next">下一集</string>
+    <string name="mine_play_with_space">"播放  "</string>
+    <string name="mine_times">次</string>
+    <string name="mine_date_form">yyyy年MM月dd日</string>
+    <string name="mine_modify_date">修改资料</string>
+    <string name="mine_info_abnormal">信息异常</string>
+    <string name="mine_nickname">昵称</string>
+    <string name="mine_female">女</string>
+    <string name="mine_secret_sex">保密</string>
+    <string name="mine_upload_headimg_failed">头像上传失败，请重试</string>
+    <string name="mine_upload_abnormal">内容上传异常</string>
+    <string name="mine_title">我的</string>
+    <string name="mine_namehint">昵称</string>
+    <string name="mine_lasttime">已看到</string>
+    <!-- search page -->
+    <string name="hot_search">热门搜索</string>
+    <string name="history_search">搜索历史</string>
+    <string name="history_clear">清空</string>
+    <string name="history_load_more">更多>></string>
+    <string name="search_cancel">取消</string>
+    <string name="search_all">全网搜索</string>
+    <string name="search_result_failed">网络连接失败，请检查网络设置</string>
+
+    <!-- search result page -->
+    <string name="search_channel_all">全部</string>
+    <string name="search_clear_dialg_title">清空最近搜索记录</string>
+
+    <!-- offline page -->
+    <string name="offline_delete">删除</string>
+    <string name="offline_complete">已完成</string>
+    <string name="offline_waiting">等待中</string>
+    <string name="check_all">全选</string>
+    <string name="download_success">已完成</string>
+    <string name="downlaod_waiting">等待中</string>
+    <string name="downlaod_failed">失败</string>
+    <string name="no_download_file">暂无离线文件</string>
+    <string name="download_stop">暂停</string>
+    <string name="mobile_if_download">目前是非wifi网络，是否缓存</string>
+    <string name="check_update_dialog">检测到最新版本，是否更新</string>
+    <string name="mine_offline_nocontent">视频缓存后，无网也能观看</string>
+    <string name="download_netchange">已切换到非wifi网络,暂停视频下载</string>
+    <!-- 错误提示页 -->
+    <string name="net_error_refresh">重新再试</string>
+    <string name="share_string">我正在看:</string>
+    <!-- 发现 -->
+    <string name="search_hint">输入片名、导演、演员</string>
+    <string name="pleasewait">敬请期待</string>
+    <string name="discover_title">发现</string>
+    <string name="cache">缓存</string>
+    <string name="viewmore">向上滑动查看更多</string>
+    <!-- 播放详情页 -->
+    <string name="second_short">秒</string>
+    <string name="play_lastposition">播放至:%s</string>
+    <string name="play_today">今天</string>
+    <string name="play_earlier">更早</string>
+    <string name="play_clicktoomuch">亲，您点的太快了</string>
+    <string name="play_showtime">上映时间：%s</string>
+    <string name="play_area">地区：%s</string>
+    <string name="play_category">类型 ：%s</string>
+    <string name="play_abstract">介绍：%s</string>
+    <string name="play_endtime">结束时间：%s</string>
+    <string name="play_begintime">开始时间：%s</string>
+    <string name="play_actcategory">活动类型 ：%s</string>
+    <string name="tenthousand">万</string>
+    <string name="hundredmillion">亿</string>
+    <string name="play_cannotview">不支持的页面类型</string>
+    <string name="play_episodeprogress">总共%1$s集/更新%2$s集</string>
+    <string name="play_downloadsize">缓存(%s)</string>
+    <string name="play_detail_episode_title">剧集</string>
+    <string name="play_detail_arts_title">期数</string>
+    <string name="play_detail_recommend_title">期数</string>
+    <string name="play_detail_comment">评论</string>
+    <string name="play_detail_comment_hint">我也说句话</string>
+    <string name="play_detail_playcount">播放：</string>
+    <string name="play_detail_ci">次</string>
+    <string name="play_prise_toast">您已踩过</string>
+    <string name="play_cai_toast">您已赞过</string>
+    <string name="play_prise_repeat_toast">只能赞一次哦</string>
+    <string name="play_cai_repeat_toast">只能踩一次哦</string>
+    <string name="play_toast_noNet">网络环境不给力，请重试</string>
+    <string name="plaly_login_comment">亲，登录后才能评论哦</string>
+    <string name="plaly_login_collection">亲，登录后才能收藏哦</string>
+    <string name="play_detail_nocomment">还没有评论，抢个沙发吧！</string>
+    <string name="play_detail_comment_failed">评论加载失败，请刷新！</string>
+    <string name="play_detail_detail_failed">详情加载失败，请刷新！</string>
+    <string name="play_downlaod_check">全选/取消全选</string>
+    <string name="play_downlaod_noNet">无网络不能下载</string>
+    <string name="play_downlaod_nowifi">非wifi下不能下载，请在设置中更改</string>
+    <string name="play_download_nodowload">暂不提供缓存</string>
+    <string name="play_download_hasdowload">该视频已缓存</string>
+    <string name="play_downlaod_all_nodowload">部分视频暂无法加入缓存</string>
+    <string name="play_downlaod_all_hasdowload">部分视频已缓存</string>
+    <string name="play_downlaodauthfailed">该片为付费视频，付费后可提供下载功能</string>
+    <string name="play_downlaod">已添加到我的-离线缓存</string>
+    <string name="play_send">发送</string>
+    <string name="play_now">当前正在播放</string>
+    <string name="play_videoleft_dialog_title">该视频已经下线</string>
+    <string name="play_nocomment">没有发送任何评论</string>
+    <string name="mine_input_nothing">没有输入任何内容</string>
+    <string name="mine_please_input_cdkey">请输入兑换码</string>
+    <string name="play_try_and_see_6min">免费试看前6分钟，观看完整版请</string>
+    <string name="play_pay_rightnow">立即购买</string>
+    <string name="play_payed">" 已购买"</string>
+    <string name="play_login_rightnow">立即登录</string>
+    <string name="play_end_tryandsee_notice">试看结束，观看完整版请开通会员或购买单片</string>
+    <string name="play_payed_or_vip">已购买或已是会员</string>
+    <string name="play_login_to_see">登录观看</string>
+    <string name="play_film_need_pay">该片为付费影片</string>
+    <string name="play_single_end_tryandsee_notice">试看结束，观看完整版请购买单片</string>
+    <string name="play_get_vip_with_comma">开通会员，</string>
+    <string name="play_single_pay_for_half">优惠购买单片</string>
+    <string name="play_vip_end_tryandsee_notice">试看结束，观看完整版请开通会员</string>
+    <string name="play_is_vip">已是会员</string>
+    <string name="play_is_vip_with_can">已是会员可</string>
+    <string name="mine_vip_endtime_text">全屏影视会员(到期日期</string>
+    <string name="play_text_before_tryandsee_time">免费试看</string>
+    <string name="play_text_after_tryandsee_time">分钟，观看完整版请</string>
+    <string name="play_text_after_tryandsee_time_second">秒，观看完整版请</string>
+    <string name="play_how_much_to_pay">元购买</string>
+    <string name="play_how_much__to_pay_with_half">元购买，会员优惠</string>
+    <string name="play_seconds_text">秒</string>
+    <string name="vip_endtime_text">到期时间</string>
+    <string name="no_network">目前无网络</string>
+    <string name="not_login">您还没有登录</string>
+    <string name="unlock">已解锁</string>
+    <string name="locked">已锁定</string>
+    <string name="wifi_network">您处在非wifi网络</string>
+    <string name="alreadynow">已经回到最新播放时间啦</string>
+    <string name="player_proxy_error">播放代理错误:</string>
+    <string name="time_shift_error">时移错误</string>
+    <string name="media_decoding_error">媒体解码错误</string>
+    <string name="media_not_exist">媒体不存在</string>
+    <string name="media_playurl_network_error">调度网络错误</string>
+    <string name="media_playurl_server_error">调度服务器错误</string>
+    <string name="buffering">正在缓冲</string>
+    <string name="play_liveend">直播已结束</string>
+    <string name="loading_pls_wait">正在加载，请稍后</string>
+    <string name="network_connected_failed">网络连接失败</string>
+    <string name="nostreamnow">当前时段未找到媒体流</string>
+    <string name="play_payed2">已购买</string>
+    <string name="foreshow">2</string>
+    <string name="delete_failed">取消收藏失败</string>
+    <string name="delete_ok">取消收藏成功</string>
+    <string name="collect_ok">"收藏成功</string>
+    <string name="collect_failed">收藏失败</string>
+    <string name="reply">回复</string>
+    <string name="checking_like">正在审核中，不能点赞</string>
+    <string name="checking_comment">正在审核中，不能评论</string>
+    <string name="play_solong">亲，写太多了！超出%s个字</string>
+    <string name="justnow">刚刚</string>
+    <string name="placement">机位%s</string>
+    <string name="play_hd">高清</string>
+    <string name="play_danmaku_hint">吐槽不止，弹幕不停</string>
+    <!-- 移动直播 -->
+    <string name="livingnow">正在直播</string>
+    <string name="liveusername">"姓       名："</string>
+    <string name="liveuserhint">请输入您的真实姓名</string>
+    <string name="livecardid">"身份证号："</string>
+    <string name="livecardpic">"证件照片："</string>
+    <string name="livecardpictip">"(请按照样图上传证件照片)"</string>
+    <string name="liveidhint">请输入您的身份证号</string>
+    <string name="liveidentity">身份验证</string>
+    <string name="livedone">完成</string>
+    <string name="livestart">开始直播</string>
+    <string name="livecancel">取消</string>
+    <string name="liveclipok">选取</string>
+    <string name="livetip">"为了规范直播环境，请提供以下信息（我们绝对不会泄露您的隐私）"</string>
+    <!-- login -->
+    <string name="login">登录</string>
+    <string name="newpassword_title">设置新密码</string>
+    <string name="privacy_title">服务协议</string>
+    <string name="pls_input_correct_username">请输入正确的用户名</string>
+    <string name="login_failed">登录失败</string>
+    <string name="yyyy_mm_dd_">yyyy年MM月dd日</string>
+    <string name="login_success">登录成功</string>
+    <string name="cant_watch">无法观看</string>
+    <string name="mine_fill_userinfo">完善个人资料</string>
+    <string name="modify_name">修改昵称</string>
+    <string name="namecannotempty">昵称不能为空</string>
+    <string name="modifyname_failed">用户名修改失败</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="dateformat">yyyy年MM月dd日</string>
+    <string name="upload_error">内容上传异常</string>
+    <string name="phonenum_error">请填写正确的手机号</string>
+    <string name="codecannotempty">验证码不能为空</string>
+    <string name="login_ensure">确定</string>
+    <string name="login_cancel">取消</string>
+    <string name="dialog_title">提示</string>
+    <string name="argeeprivacy">您确定同意服务协议的全部内容？</string>
+    <string name="requestcodeok">验证码请求成功</string>
+    <string name="version_code_text">版本号</string>
+    <string name="mine_feedback_desc_text">您的宝贵建议将帮助我们不断改进</string>
+    <string name="submit">提交</string>
+    <string name="please_input_old_password">请输入旧密码</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="click_to_upload_headimage">点击上传头像</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="ok">完成</string>
+    <string name="next">下一步</string>
+    <string name="nickname_rules">4-32个字符，支持中英文、数字或\'_\'。注意：不能用纯数字或\'_\'</string>
+    <string name="gallary">图库</string>
+    <string name="take_pic">拍照</string>
+    <string name="wechat">微信</string>
+    <string name="microblog">微博</string>
+    <string name="qq">QQ</string>
+    <string name="account">账号：</string>
+    <string name="phonenumber">手机号</string>
+    <string name="pls_input_password">请输入6-20位字母、数字或字符</string>
+    <string name="reg_at_once">"立即注册   "</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="no_download">暂无缓存</string>
+    <string name="download_video_desc">视频缓存后，无网也能观看</string>
+    <string name="no_search_result">很抱歉，未能找到相关内容</string>
+    <string name="select_all_or_not">全选/取消全选</string>
+    <string name="delete_num">删除(0)</string>
+    <string name="birthday_with_colon">生日</string>
+    <string name="notice">提示</string>
+    <string name="is_clear_all">确定要清空吗？</string>
+    <string name="account_with_colon">账号：</string>
+    <string name="pwd_with_colon">密码：</string>
+    <string name="verifycode_with_colon">验证码：</string>
+    <string name="agree">同意</string>
+    <string name="user_protocol">《用户服务协议》</string>
+    <string name="register">注册</string>
+    <string name="pls_input_verifycode">请输入手机验证码</string>
+    <string name="see_all">查看全部</string>
+    <string name="watch_rightnow">立即观看</string>
+    <string name="back">返回</string>
+    <string name="update_notice">升级提示</string>
+    <string name="update_now">立即升级</string>
+    <string name="ignore_this_version">忽略此版本</string>
+    <string name="share">分享到</string>
+    <string name="vip_to_skip_ad">会员去广告>></string>
+    <string name="click_to_back_to_live">回到直播</string>
+    <string name="recommend">推荐</string>
+    <string name="episode">剧集</string>
+    <string name="click_to_retry">点此重试</string>
+    <string name="click_to_get_videoinfo">试看结束，获取影片信息失败，点击重试</string>
+    <string name="camera_1">机位一</string>
+    <string name="no_signal_yet">暂无信号</string>
+    <string name="not_wifi_notice">网络处在非wifi环境下，是否继续观看？</string>
+    <string name="cancel_watch">取消观看</string>
+    <string name="continue_to_watch">继续播放</string>
+    <string name="live">直播</string>
+    <string name="ensure_new_pwd">确认新密码：</string>
+    <string name="hot_spots_today">今日热点</string>
+    <string name="recommend_more">更多</string>
+    <string name="ensure_new_password">确认新密码</string>
+    <string name="pls_input_phonenumber">请输入手机号码</string>
+    <string name="pls_input_nickname">请输入昵称</string>
+    <string name="letv_recorder_camera">切换摄像头不能太频繁哦,等待10秒后再切换吧</string>
+    <string name="letv_recorder_time">直播准备中: 00:00:00</string>
+    <string name="letv_recorder_mobilelive">移动直播</string>
+    <string name="letv_recorder_url_error">推流地址不正确</string>
+    <string name="letv_mobilelive_share_desc">正在直播，快来一起看</string>
+    
+    <string name="play_detail_tvlive_nocon">当前暂无相关节目单</string>
+    <string name="play_tvlive_live">直播中</string>
+    <string name="play_tvlive_back">回看</string>
+    <string name="play_tvlive_no">未开始</string>
+
+    <string-array name="play_placement">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+    </string-array>
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <item name="cycle_tag_pos" type="id"></item>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <!--
+    <HorizontalScrollView
+        android:id="@+id/search_result_head_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/search_result_head"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/code01"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp" >
+
+            <TextView
+                android:id="@+id/search_result_headtitle_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/search_result_head_focused"
+                android:text="@string/search_channel_all"
+                android:textColor="@color/code4"
+                android:textSize="@dimen/search_result_head_tv" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_result_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/code01"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/code01"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/pull_down"
+        ptr:ptrHeaderTextAppearance="@style/pullRefreshTextAppearance" />
+
+</LinearLayout>

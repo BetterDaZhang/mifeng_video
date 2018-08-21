@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_nodata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_mine_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="173dp"
+        android:src="@drawable/mine_nocollect" />
+
+    <TextView
+        android:id="@+id/tv_mine_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/mine_no_collections"
+        android:textColor="@color/code3"
+        android:textSize="17dp" >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="@string/mine_no_collection_videos"
+        android:textColor="@color/code4"
+        android:textSize="13dp" >
+    </TextView>
+
+</LinearLayout>

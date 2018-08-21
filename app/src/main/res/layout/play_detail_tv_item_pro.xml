@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/play_tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/play_tvlive_flag"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/date_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/play_tv_tag"
+        android:textColor="@color/code4"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/status_tx"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/play_tv_back"
+        android:gravity="center_horizontal"
+        android:textColor="@color/code4"
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/xian"
+        android:layout_width="0.5dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/status_tx"
+        android:background="@color/code03" />
+
+    <TextView
+        android:id="@+id/title_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/xian"
+        android:layout_toRightOf="@id/date_tx"
+        android:singleLine="true"
+        android:textColor="@color/code4"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/code03" />
+
+</RelativeLayout>

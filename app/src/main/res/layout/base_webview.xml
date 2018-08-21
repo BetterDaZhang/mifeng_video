@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <com.letv.autoapk.widgets.HorizontalProgressBarWithNumber
+        android:id="@+id/pb_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        zhy:progress_text_color="@color/code1"
+        zhy:progress_unreached_color="@color/code01" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </WebView>
+
+</LinearLayout>

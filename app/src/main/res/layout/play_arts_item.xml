@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/code01" >
+
+    <RelativeLayout
+        android:id="@+id/arts_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6.7dp"
+        android:paddingBottom="6.7dp">
+
+        <com.letv.autoapk.widgets.NetImageViewHorizontal16_10
+            android:id="@+id/play_arts_img"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/play_detail_recommend_img_height"
+            android:background="@drawable/default_img_16_10"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/play_arts_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@id/play_arts_img"
+            android:layout_marginLeft="@dimen/play_detail_episode_paddingright"
+            android:layout_marginRight="@dimen/play_detail_head_right"
+            android:layout_toRightOf="@id/play_arts_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/play_arts_item_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/play_detail_episode_paddingright"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/play_detail_main_title" />
+
+            <TextView
+                android:id="@+id/play_arts_item_director"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/code10"
+                android:textSize="@dimen/play_detail_deputy_title" />
+
+            <TextView
+                android:id="@+id/play_arts_item_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/code10"
+                android:textSize="@dimen/play_detail_deputy_title" />
+
+            <TextView
+                android:id="@+id/play_arts_item_playTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mine_collection_item_guankan"
+                android:drawablePadding="2dp"
+                android:paddingTop="@dimen/play_detail_episode_paddingright"
+                android:textColor="@color/code10"
+                android:textSize="@dimen/play_detail_deputy_title" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

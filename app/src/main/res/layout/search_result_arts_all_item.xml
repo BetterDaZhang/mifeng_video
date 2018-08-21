@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 全部综艺页item -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_img_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/offline_item_height"
+    android:background="@color/code01" >
+
+    <com.letv.autoapk.widgets.NetImageView16_10
+        android:id="@+id/search_result__item_img"
+        android:layout_width="@dimen/search_item_img_width"
+        android:layout_height="@dimen/search_item_img_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/search_item_title_marginleft"
+        android:background="@drawable/default_img_16_10" />
+
+    <TextView
+        android:id="@+id/search_result__title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/search_result__item_img"
+        android:layout_marginLeft="@dimen/search_item_title_marginleft"
+        android:layout_marginRight="@dimen/search_item_title_marginright"
+        android:layout_marginTop="@dimen/search_item_title_marginleft"
+        android:layout_toRightOf="@id/search_result__item_img"
+        android:textColor="@color/code3"
+        android:text="search_result__title"
+        android:textSize="@dimen/search_result_all_art_item_title_textsize" />
+
+    <TextView
+        android:id="@+id/search_result_playcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_result__title"
+        android:layout_marginLeft="@dimen/search_item_title_marginleft"
+        android:layout_marginTop="@dimen/search_result_art_publishtime_marginright"
+        android:layout_toRightOf="@id/search_result__item_img"
+        android:drawableLeft="@drawable/search_result_art_item_guankan"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="2064113"
+        android:textColor="@color/code10"
+        android:textSize="@dimen/search_result_all_art_item_publishtime_textsize"
+        android:visibility="gone" />
+
+</RelativeLayout>

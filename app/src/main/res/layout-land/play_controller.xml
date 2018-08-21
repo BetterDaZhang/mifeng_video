@@ -1,0 +1,303 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:id="@+id/control_leftlayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/play_brightbg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <com.letv.autoapk.ui.player.view.VerticalProgressBar
+                    android:id="@+id/control_voice"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="3dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="@dimen/play_control_vertical_height"
+                    android:progressDrawable="@drawable/play_progressbar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:src="@drawable/play_sound" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/control_centerlayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@drawable/play_brightbg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/iv_seekto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/play_ff" />
+
+            <TextView
+                android:id="@+id/tv_seekto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/control_rightlayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/play_brightbg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <com.letv.autoapk.ui.player.view.VerticalProgressBar
+                    android:id="@+id/control_bright"
+                    android:layout_marginTop="5dp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="3dip"
+                    android:layout_height="@dimen/play_control_vertical_height"
+                    android:progressDrawable="@drawable/play_progressbar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:src="@drawable/play_brightness" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.letv.autoapk.ui.player.view.PlayControlContainer
+        android:id="@+id/play_topcontrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:hideanime="@anim/slide_out_to_top"
+        app:showanime="@anim/slide_in_from_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_control_bottom_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <ImageView
+                android:id="@+id/control_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/play_back" />
+
+            <TextView
+                android:id="@+id/control_title"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/play_control_title_textsize" />
+
+            <Button
+                android:id="@+id/control_barrage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/play_barrage"
+                android:gravity="center"
+                android:text="@string/play_barrage"
+                android:textColor="@color/code6"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/control_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/play_barrage"
+                android:gravity="center"
+                android:text="@string/play_choose"
+                android:textColor="@color/code6"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/control_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/play_barrage"
+                android:gravity="center"
+                android:text="@string/play_more"
+                android:textColor="@color/code6"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/control_ratetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/play_barrage"
+                android:gravity="center"
+                android:textColor="@color/code6"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </com.letv.autoapk.ui.player.view.PlayControlContainer>
+
+    <com.letv.autoapk.ui.player.view.PlayControlContainer
+        android:id="@+id/play_bottomcontrol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:hideanime="@anim/slide_out_to_bottom"
+        app:showanime="@anim/slide_in_from_bottom" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_control_bottom_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/play_bottombg"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip" >
+
+            <Button
+                android:id="@+id/control_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/play_play" />
+
+            <Button
+                android:id="@+id/control_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/play_zoom_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/control_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="00:00:00"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/play_controlland_time_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/control_seek_bg"
+                android:layout_toLeftOf="@id/control_duration"
+                android:layout_toRightOf="@id/control_play"
+                android:background="#373737" />
+
+            <com.letv.autoapk.ui.player.view.PlaySeekBar
+                android:id="@+id/control_seek"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/control_duration"
+                android:layout_toRightOf="@id/control_play"
+                android:max="1000"
+                android:maxHeight="@dimen/play_control_bottom_height"
+                android:progress="0"
+                android:progressDrawable="@drawable/play_seekbar"
+                android:thumb="@drawable/play_thumb"
+                android:thumbOffset="0dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/control_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/control_seek"
+                android:layout_centerVertical="true"
+                android:text="00:00"
+                android:textColor="#cccccc"
+                android:textSize="@dimen/play_controlland_time_textsize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/control_backtolive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/play_backtobg"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dip"
+            android:text="@string/click_to_back_to_live"
+            android:textColor="@color/code7"
+            android:textSize="@dimen/play_control_backtolive_textsize"
+            android:visibility="gone" />
+    </com.letv.autoapk.ui.player.view.PlayControlContainer>
+
+    <ImageView
+        android:id="@+id/control_danmaku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/play_barrage_icon"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/control_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/control_danmaku"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/play_lock_off" />
+
+</RelativeLayout>

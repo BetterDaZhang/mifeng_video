@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lepay_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+
+    <ScrollView
+        android:id="@+id/lepay_cashier_sview"
+        style="@style/lepay_fillparent"
+        android:layout_below="@id/lepay_actionbar">
+
+        <LinearLayout
+            android:id="@+id/lepay_ll_cashier"
+            style="@style/lepay_width_fillparent"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/lepay_cashier_trade_area"
+                style="@style/lepay_width_fillparent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lepay_cashier_orderinfo"
+                    style="@style/lepay_width_fillparent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/lepay_no_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/lepay_cashier_orderlabel"
+                        android:textColor="@color/c555555"
+                        android:textSize="@dimen/lepay_cashier_trade_desc" />
+
+                    <TextView
+                        android:id="@+id/lepay_cashier_trade_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/lepay_no_title"
+                        android:singleLine="true"
+                        android:textColor="@color/c555555"
+                        android:textSize="@dimen/lepay_cashier_trade_desc" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lepay_cashier_one_orderinfo"
+                    style="@style/lepay_width_fillparent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/lepay_actionbar_bg_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/lepay_cashier_one_layout"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/lepay_cashier_one_imgeview"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/img_order" />
+
+                        <TextView
+                            android:id="@+id/lepay_cashier_one_product_count"
+                            android:layout_width="22dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/lepay_proudct_count_bg"
+                            android:gravity="center"
+                            android:textColor="@color/lepay_white"
+                            android:textSize="11sp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/lepay_cashier_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/lepay_cashier_one_layout"
+                        android:singleLine="true"
+                        android:textColor="@color/c333333"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/lepay_cashier_product_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/lepay_cashier_one_layout"
+                        android:singleLine="true"
+                        android:textColor="@color/cB3B3B3"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lepay_cashier_more_orderinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/lepay_actionbar_bg_color" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/lepay_cashier_product_sview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/lepay_cashier_more_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:id="@+id/lepay_cashier_all_product_count"
+                        android:layout_width="56dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/lepay_all_product_count_bg"
+                        android:gravity="center"
+                        android:textColor="@color/c333333"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lepay_cashier_paytype_list"
+                style="@style/lepay_width_fillparent"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.letv.lepaysdk.view.MontmorilloniteLayer
+        android:id="@+id/lepay_cashier_payload_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone" />
+
+    <include layout="@layout/lepay_pay_item" />
+</RelativeLayout>

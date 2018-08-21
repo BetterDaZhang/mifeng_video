@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/tv_img_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/search_item_img_height"
+        android:layout_marginTop="13dp" >
+
+        <com.letv.autoapk.widgets.NetImageViewHorizontal16_10
+            android:id="@+id/search_result__item_img"
+            android:layout_width="123dp"
+            android:layout_height="@dimen/search_item_img_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/search_item_title_marginleft"
+            android:background="@drawable/default_img_16_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/search_result__item_img"
+            android:layout_marginLeft="@dimen/search_item_title_marginleft"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/search_result__item_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/search_result__title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/search_item_title_marginright"
+                android:text="search_result__title"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/search_result_film_content_textsize" />
+
+            <TextView
+                android:id="@+id/search_result_publishtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="search_result__title"
+                android:textColor="@color/code2"
+                android:textSize="@dimen/search_result_film_content_textsize" />
+
+            <TextView
+                android:id="@+id/search_result_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="search_result__title"
+                android:textColor="@color/code2"
+                android:textSize="@dimen/search_result_film_content_textsize" />
+
+            <TextView
+                android:id="@+id/search_result_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="search_result__title"
+                android:textColor="@color/code2"
+                android:textSize="@dimen/search_result_film_content_textsize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.letv.autoapk.widgets.FlowLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:f="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_result_flowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_img_rl"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/code01"
+        android:paddingTop="13dp"
+        f:horizontalSpacing="9.6dp"
+        f:orientation="horizontal"
+        f:verticalSpacing="10dp" >
+    </com.letv.autoapk.widgets.FlowLayout>
+
+</RelativeLayout>

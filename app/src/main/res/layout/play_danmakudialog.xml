@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/editlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="#b3000000" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/play_cancel" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="0dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/play_dinputbg"
+            android:gravity="center_vertical"
+            android:hint="@string/play_danmaku_hint"
+            android:maxLength="50"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="13dp" />
+        <Button
+            android:id="@+id/sendtext"
+            android:layout_width="57dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/play_send"
+            android:textColor="@color/code6"
+            android:textSize="11dp"
+            android:background="@drawable/play_sendbg" />
+    </LinearLayout>
+
+</LinearLayout>

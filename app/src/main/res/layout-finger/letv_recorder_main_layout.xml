@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.letv.recorder.ui.SurfaceFrameLayout
+        android:id="@+id/letv_recorder_surface_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C5CAE9" >
+    </com.letv.recorder.ui.SurfaceFrameLayout>
+
+    <FrameLayout
+        android:id="@+id/letv_recorder_top_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true" >
+        <include 
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/letv_recorder_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+    
+     <include
+        android:id="@+id/layout_filter"
+        layout="@layout/letv_recorder_filter_imageedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

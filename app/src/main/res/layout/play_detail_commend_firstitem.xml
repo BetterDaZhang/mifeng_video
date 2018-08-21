@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/code01"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/play_detail_head_left"
+    android:paddingRight="@dimen/play_detail_head_right"
+    android:paddingTop="12.9dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.letv.autoapk.widgets.CircleImageView
+            android:id="@+id/play_detail_comment_icon"
+            android:layout_width="@dimen/play_detail_comment_icon"
+            android:layout_height="@dimen/play_detail_comment_icon"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/play_comment_user" >
+        </com.letv.autoapk.widgets.CircleImageView>
+
+        <LinearLayout
+            android:id="@+id/play_detail_comment_item_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/play_detail_comment_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/play_detail_comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/play_detail_deputy_title" />
+
+            <TextView
+                android:id="@+id/play_detail_comment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/code4"
+                android:textSize="@dimen/play_detail_deputy_title" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/play_detail_comment_prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9.6dp"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@drawable/play_tv_like"
+            android:gravity="center_vertical"
+            android:textColor="@color/code10"
+            android:textSize="@dimen/play_detail_deputy_title" />
+
+        <ImageView
+            android:id="@+id/play_detail_comment_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18.9dp"
+            android:layout_toLeftOf="@id/play_detail_comment_prise"
+            android:src="@drawable/play_tv_comment" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/play_detail_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.9dp"
+        android:layout_marginTop="10.2dp"
+        android:textColor="@color/code4"
+        android:textSize="@dimen/play_detail_deputy_title" />
+
+    <ImageView
+        android:id="@+id/commend_sec_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/play_detail_comment_content_left"
+        android:layout_marginRight="@dimen/play_detail_head_left"
+        android:background="@color/code03"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/commend_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_detail_comment_prise"
+        android:background="@drawable/play_detail_xian" />
+
+</LinearLayout>

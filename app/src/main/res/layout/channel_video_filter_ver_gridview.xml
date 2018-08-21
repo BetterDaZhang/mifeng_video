@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/recommend_item_head_paddingLeft"
+    android:paddingRight="@dimen/recommend_item_head_paddingLeft" 
+    android:paddingTop="@dimen/channel_filter_title">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextAppearance ="@style/pullRefreshTextAppearance"
+        ptr:ptrDrawable="@drawable/pull_down"
+        android:id="@+id/video_filter_ver_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="@dimen/twolands_margin"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</LinearLayout>

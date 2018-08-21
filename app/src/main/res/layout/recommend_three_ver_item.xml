@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recommend_threever_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/recommend_item_head_paddingLeft"
+    android:paddingRight="@dimen/recommend_item_head_paddingLeft" >
+
+    <LinearLayout
+        android:id="@+id/recommend_one_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/recommend_item_paddingbottom"
+        android:paddingTop="@dimen/recommend_item_paddingbottom" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.letv.autoapk.widgets.NetImageView10_16
+                android:id="@+id/left_one_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:borderRadius="2dp" />
+
+            <TextView
+                android:id="@+id/left_one_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/recommend_item_twolands_title_marginTop"
+                android:singleLine="true"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/recommend_item_twolands_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/threever_margin"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.letv.autoapk.widgets.NetImageView10_16
+                android:id="@+id/middle_one_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:borderRadius="2dp" />
+
+            <TextView
+                android:id="@+id/middle_one_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/recommend_item_twolands_title_marginTop"
+                android:singleLine="true"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/recommend_item_twolands_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/threever_margin"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.letv.autoapk.widgets.NetImageView10_16
+                android:id="@+id/right_one_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:borderRadius="2dp" />
+
+            <TextView
+                android:id="@+id/right_one_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/recommend_item_twolands_title_marginTop"
+                android:singleLine="true"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/recommend_item_twolands_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

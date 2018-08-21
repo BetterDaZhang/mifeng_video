@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="letv_record_live_time_already">已开始直播</string>
+     <string name="letv_record_is_exit_mobilelive">确定要退出直播吗？</string>
+     <string name="letv_record_failed_identity_title">您的身份验证未通过审核</string>
+     <string name="letv_record_cancel_identity">取消</string>
+     <string name="letv_record_wait_identity">您的身份信息已上传成功，请耐心等待审核结果</string>
+     <string name="letv_record_is_online_yet">您已在其他设备上开启了直播， 无法再次开启</string>
+     <string name="letv_record_upload_anchorinfo_failed">身份信息上传失败，请稍候重试</string>
+     <string name="letv_record_recommit_identity">重新提交</string>
+     <string name="letv_record_error_idnumber">身份证号错误</string>
+     <string name="letv_record_identity_no_image">请上传您的身份证照片</string>
+     <string name="letv_record_exit_mobilelive">退出直播</string>
+     <string name="letv_record_continue_mobilelive">继续直播</string>
+     <string name="letv_record_failed_get_mobilelive_path">获取推流地址失败</string>
+     <string name="letv_record_mobilelive_no_content">暂无直播内容</string>
+     <string name="letv_record_mobilelive_no_content2">您可以现在发起一场直播</string>
+     <string name="letv_record_mobilelive_finish">直播已关闭</string>
+</resources>

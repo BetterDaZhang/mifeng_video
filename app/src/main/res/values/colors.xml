@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体颜色 -->
+    <color name="code1">#cc0000</color>
+    <!-- 搜索副标题颜色 -->
+    <color name="code2">#8e8e93</color>
+    <!-- 主标题颜色 -->
+    <color name="code3">#333333</color>
+    <!-- 副标题颜色 -->
+    <color name="code4">#888888</color>
+    <color name="code5">#000000</color>
+    <color name="code6">#ffffff</color>
+    <!-- 轮播图文字 -->
+    <color name="code7">#ffffff</color>
+	<color name="code8">#e67a78</color>
+	<color name="code9">#cccccc</color>
+	<color name="code10">#a4a6af</color>
+	<color name="code11">#000000</color>
+    <!-- 背景颜色 -->
+    <color name="code01">#ffffff</color>
+    <!-- 个人中心背景色 -->
+    <color name="code02">#cc0000</color>
+    <!-- 线的颜色 -->
+    <color name="code03">#ceced2</color>
+    <!-- 头部背景色 -->
+    <color name="code04">#cc0000</color>
+    <!-- 底部被选中背景色 -->
+    <color name="code05">#3d0203</color>
+    <!-- 底部未选中背景色 -->
+    <color name="code06">#ffffff</color>
+    <!-- 播放页下面+评论 -->
+    <color name="code07">#3c1e1e</color>
+    <!-- 播放器下面+评论回复背景 -->
+    <color name="code08">#343338</color>
+    <color name="code09">#f8f8f8</color>
+    <color name="code010">#fafafa</color>
+    <!-- recommend page -->
+    <color name="headvp_shadow">#44000000</color>
+    <color name="player_shadow">#99000000</color>
+    <color name="progress_shadow">#44cc0000</color>
+    <color name="vip_color">#ffcc00</color>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/play_detail_head_left"
+    android:paddingRight="@dimen/play_detail_head_right" >
+
+    <RelativeLayout
+        android:id="@+id/play_episode_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/play_detail_episode_margin"
+        android:paddingTop="@dimen/play_detail_episode_margin" >
+
+        <TextView
+            android:id="@+id/play_episode_tiltle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/episode"
+            android:textColor="@color/code1"
+            android:textSize="@dimen/play_detail_main_title" />
+
+        <TextView
+            android:id="@+id/play_episode_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/play_tv_exit"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_deputy_title" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_detail_xian" />
+
+    <com.letv.autoapk.widgets.CustomDetailTabPageIndicator
+        android:id="@+id/play_detail_episode_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/play_detail_episode_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

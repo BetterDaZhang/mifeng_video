@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.letv.autoapk.widgets.NetImageView
+        android:id="@+id/imgv_mine_history_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_history_view_layout_linear_height"
+        android:layout_gravity="bottom"
+        android:background="@color/code01"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tv_mine_history_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="6"
+            android:paddingLeft="@dimen/mine_history_view_layout_linear_padding_left"
+            android:singleLine="true"
+            android:textColor="@color/code7"
+            android:textSize="@dimen/mine_history_view_layout_text_name_size" />
+
+        <TextView
+            android:id="@+id/tv_mine_history_timer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="6"
+            android:paddingLeft="@dimen/mine_history_view_layout_linear_padding_left"
+            android:singleLine="true"
+            android:textColor="@color/code7"
+            android:textSize="@dimen/mine_history_view_layout_text_time_size" />
+    </LinearLayout>
+
+</FrameLayout>

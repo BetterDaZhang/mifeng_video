@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/play_detail_episode_margin" >
+
+    <TextView
+        android:id="@+id/play_arts_tiltle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:drawableRight="@drawable/play_coderate"
+        android:paddingLeft="@dimen/play_detail_head_left"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/play_detail_main_title"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/play_arts_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/play_detail_click_margin"
+        android:paddingRight="@dimen/play_detail_head_right"
+        android:src="@drawable/play_tv_exit" />
+
+    <!-- com.letv.autoapk.widgets.HeaderGridView -->
+
+    <LinearLayout
+        android:id="@+id/play_downlod_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_downlaod_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/play_download_checkall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/code01"
+            android:gravity="center"
+            android:textColor="@color/code4"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/play_download_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/code03"
+            android:gravity="center"
+            android:textColor="@color/code7"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_downlod_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignTop="@id/play_downlod_bottom"
+        android:background="@color/code03" />
+
+    <ListView
+        android:id="@+id/play_arts_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/play_downlod_bottom_line"
+        android:layout_below="@id/play_arts_tiltle"
+        android:layout_marginTop="13dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

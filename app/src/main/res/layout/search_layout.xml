@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 搜索框 -->
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/search_header_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/search_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- 搜索历史和热门搜索 -->
+
+                <include
+                    android:id="@+id/search_history_and_hot"
+                    layout="@layout/search_history_and_hot" />
+
+                <!-- 联想词 -->
+
+                <include
+                    android:id="@+id/search_matchwords"
+                    layout="@layout/search_matchwords" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/cover_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:visibility="gone" >
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

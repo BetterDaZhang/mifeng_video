@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="92dp"
+    android:paddingTop="13dp" >
+
+    <CheckBox
+        android:id="@+id/offline_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/mine_collection_checkbox_marginleft"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/mine_checkbox_selector"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/offline_item_img"
+        android:layout_width="@dimen/search_item_img_width"
+        android:layout_height="@dimen/search_item_img_height"
+        android:layout_marginLeft="@dimen/offline_item_marginleft"
+        android:layout_toRightOf="@id/offline_checkbox" >
+
+        <com.letv.autoapk.widgets.NetImageView16_10
+            android:id="@+id/iv_offline_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/default_img_16_10"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mine_offline_item_state_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mine_downloading" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/mine_offline_item_state_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/mine_downloading"
+                android:textColor="@color/code7" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/offline_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/offline_item_img"
+        android:layout_marginLeft="@dimen/offline_item_title_marginleft"
+        android:layout_marginRight="@dimen/search_item_title_marginright"
+        android:layout_toRightOf="@id/offline_item_img"
+        android:text="offline_item_title"
+        android:maxLines="2"
+        android:textColor="@color/code3"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/offline_item_img" >
+
+        <com.letv.autoapk.widgets.HorizontalProgressBarWithNumber
+            android:id="@+id/download_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/offline_item_progress_margin"
+            android:layout_marginTop="53dp"
+            android:layout_marginRight="@dimen/offline_item_progress_margin"
+            android:max="100"
+            android:progress="0"
+            zhy:progress_reached_color="@color/code04"
+            zhy:progress_text_visibility="invisible"
+            zhy:progress_unreached_color="#ceced2" >
+        </com.letv.autoapk.widgets.HorizontalProgressBarWithNumber>
+
+        <TextView
+            android:id="@+id/offline_item_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/download_progress"
+            android:layout_marginRight="@dimen/search_item_title_marginright"
+            android:singleLine="true"
+            android:text="rate"
+            android:textColor="@color/code1"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/offline_item_downloadsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/download_progress"
+            android:layout_marginLeft="@dimen/search_item_title_marginleft"
+            android:singleLine="true"
+            android:text="size"
+            android:textColor="@color/code10"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

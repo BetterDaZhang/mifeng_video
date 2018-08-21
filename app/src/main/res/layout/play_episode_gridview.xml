@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+
+    <!-- com.letv.autoapk.widgets.HeaderGridView -->
+
+    <GridView
+        android:id="@+id/play_episode_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:columnWidth="@dimen/play_detail_episode_title_widht"
+        android:verticalSpacing="5dp"
+        android:scrollbars="none" >
+    </GridView>
+
+</LinearLayout>

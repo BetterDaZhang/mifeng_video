@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <com.letv.autoapk.ui.player.view.PlayerContainerLayout
+        android:id="@+id/playcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" >
+
+        <include
+            android:id="@+id/play_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            layout="@layout/play_playview" />
+
+
+        <include
+            android:id="@+id/msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_msg"
+            android:visibility="invisible" />
+
+
+        <include
+            android:id="@+id/control_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_controller" />
+
+        <com.letv.autoapk.ui.player.view.PlayControlContainer
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:hideanime="@anim/slide_out_to_end"
+            app:showanime="@anim/slide_in_from_end" >
+
+            <ListView
+                android:id="@+id/menulist"
+                android:layout_width="@dimen/play_control_menu_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:background="@color/player_shadow"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#26ffffff"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </com.letv.autoapk.ui.player.view.PlayControlContainer>
+
+    </com.letv.autoapk.ui.player.view.PlayerContainerLayout>
+
+</LinearLayout>

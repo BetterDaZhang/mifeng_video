@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/code02" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="45dp"
+        android:paddingLeft="@dimen/search_head_layout_marginleft"
+        android:paddingTop="@dimen/search_head_layout_margintop" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="@dimen/search_cancel_marginleft"
+            android:layout_marginRight="@dimen/search_cancel_marginleft"
+            android:text="@string/search_cancel"
+            android:textColor="@color/code6"
+            android:textSize="@dimen/search_cancel_textsize" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_head_height"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/tv_cancel"
+            android:background="@drawable/search_header" >
+
+            <ImageView
+                android:id="@+id/iv_search_clear"
+                android:layout_width="@dimen/search_head_search_icon_height"
+                android:layout_height="@dimen/search_head_search_icon_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/search_clear_margin_right"
+                android:background="@drawable/search_history_delete"
+                android:visibility="gone" />
+
+            <com.letv.autoapk.widgets.ContainsEmojiEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/iv_search_clear"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:inputType="text"
+                android:maxLength="60"
+                android:paddingLeft="11dp"
+                android:singleLine="true"
+                android:textColor="@color/code4"
+                android:textColorHint="@color/code9"
+                android:textSize="@dimen/search_keyword_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

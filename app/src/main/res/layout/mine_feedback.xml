@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code09"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="40dip"
+        android:text="@string/mine_feedback_desc_text"
+        android:textColor="@color/code4"
+        android:textSize="@dimen/mine_feedback_textsize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/mine_feedback_textsize" >
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mine_feedback_bg"
+            android:lines="10"
+            android:maxLength="300"
+            android:gravity="top|left"
+            android:padding="7dip"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/mine_feedback_textsize" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_feedback"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="19dp"
+            android:text="0/300"
+            android:textColor="@color/code9"
+            android:textSize="@dimen/mine_feedback_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/mine_login_btn"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/code7"
+        android:textSize="@dimen/mine_feedback_textsize2" />
+
+</LinearLayout>

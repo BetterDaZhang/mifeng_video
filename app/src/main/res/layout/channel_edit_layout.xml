@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/channel_bg_padding" >
+
+    <com.letv.autoapk.widgets.drag.DragGridView
+        android:id="@+id/channel_dragGridView"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:verticalSpacing="32dp"
+        android:horizontalSpacing="20dp"
+        android:columnWidth="90dip"
+  	    android:gravity="center" 
+        android:numColumns="auto_fit" >
+    </com.letv.autoapk.widgets.drag.DragGridView>
+
+</LinearLayout>

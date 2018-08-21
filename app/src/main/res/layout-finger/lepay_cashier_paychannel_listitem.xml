@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/lepay_cashier_paytype_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/lepay_paychannel_item_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            tools:src="@drawable/icon_mastercard" />
+
+        <TextView
+            android:id="@+id/lepay_paychannel_item_title"
+            style="@style/lepay_wrapparent"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/lepay_paychannel_item_icon"
+            android:textColor="@color/lepay_item_bankname_font_color"
+            tools:text="MasterCard(尾号：2231)" />
+
+        <TextView
+            android:id="@+id/lepay_paychannel_item_cardno"
+            style="@style/lepay_wrapparent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/lepay_paychannel_item_title"
+            android:background="@drawable/lepay_hbfq_bg"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lepay_paychannel_item_promote_message"
+            style="@style/lepay_wrapparent"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/lepay_paychannel_item_cardno"
+            android:textColor="@color/lepay_item_bankname_font_color"
+            android:textSize="@dimen/lepay_cashier_trade_desc"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/lepay_paychannel_item_desc"
+            style="@style/lepay_wrapparent"
+            android:layout_below="@id/lepay_paychannel_item_title"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="3.5dp"
+            android:layout_toRightOf="@id/lepay_paychannel_item_icon"
+            android:textColor="@color/lepay_paychannel_item_desc_font_color"
+            android:textSize="@dimen/lepay_cashier_trade_desc"
+            tools:text="使用银行卡支付，一步付款"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/lepay_paychannel_item_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/lepay_paychannel_item_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lepay_checkbox_unchecked"
+            android:button="@null"
+            android:clickable="false"
+            android:saveEnabled="false" />
+       <!-- <com.letv.lepaysdk.view.SwitchView
+            android:id="@+id/view_switch"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lepay_paychannel_item_sendMessage_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lepay_cashier_paytype_layout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lepay_layout_line" />"
+
+        <LinearLayout
+            android:id="@+id/lepay_paychannel_item_sendMessage_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lepay_paychannel_item_sendMessage_tips1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lepay_paychannel_listitem_1"
+                android:textColor="@color/lepay_item_bankname_font_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lepay_paychannel_item_sendMessage_tips2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="18600509870"
+                android:textColor="@color/cF45353"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lepay_paychannel_item_sendMessage_tips3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lepay_paychannel_listitem_2"
+                android:textColor="@color/lepay_item_bankname_font_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lepay_paychannel_item_sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lepay_paychannel_item_sendMessage_tips"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/lepay_debitCard_checkcode_label"
+            android:textColor="@color/lepay_item_bankname_font_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/lepay_paychannel_item_bt_checkcode"
+            android:layout_width="86dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lepay_paychannel_item_sendMessage"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/lepay_count_sms"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/lepay_creditCards_getcheckcode"
+            android:textColor="@color/lepay_bottom_button_font_color"
+            android:textSize="@dimen/lepay_alert_hint_size" />
+
+        <com.letv.lepaysdk.view.ClearEditText
+            android:id="@+id/lepay_paychannel_item_edit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/lepay_paychannel_item_sendMessage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-8dp"
+            android:layout_toLeftOf="@+id/lepay_paychannel_item_bt_checkcode"
+            android:layout_toRightOf="@id/lepay_paychannel_item_sendMessage"
+            android:background="@null"
+            android:focusable="true"
+            android:hint="@string/tip_input_validate_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/c333333"
+            android:textColorHint="@color/cB3B3B3"
+            android:textSize="@dimen/lepay_alert_hint_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lepay_alipay_monthly_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lepay_paychannel_item_sendMessage_more_layout"
+        android:layout_marginBottom="@dimen/lepay_font20"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/lepay_font20"
+        android:background="@android:color/transparent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lepay_alipay_monthly_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lepay_alipay_monthly_notice"
+            android:textSize="@dimen/lepay_common_dialog_desc_14.0sp" />
+
+        <TextView
+            android:id="@+id/lepay_alipay_monthly_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:text="@string/lepay_alipay_monthly_protocol"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/lepay_alipay_monthly_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/lepay_alipay_monthly_protocol"
+            android:background="@drawable/lepay_icon_select_after"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/lepay_alipay_monthly_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lepay_alipay_monthly_protocol"
+            android:layout_marginTop="@dimen/lepay_font20"
+            android:text="@string/lepay_alipay_monthly_tips"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lepay_paychannel_item_spilt"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginRight="0.0dp"
+        android:background="@drawable/lepay_layout_line" />"
+</RelativeLayout>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 1.1.1、增加订单详情显示（分业务线）
+    1.1.2、增加cybersource绑卡支付
+    1.1.3、增加cybersource订阅支付
+    1.1.4、增加paypal已绑账户快捷支付-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/icon_default_card" />
+
+        <LinearLayout
+            android:id="@+id/ll_paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_paypal"
+                android:layout_width="72dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                tools:src="@drawable/icon_papal" />
+
+            <TextView
+                android:id="@+id/tv_quickpay"
+                android:layout_width="75dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/icon_rectangle"
+                android:gravity="center"
+                android:visibility="invisible"
+                tools:text="Quick Pay" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="#1e1e1e"
+            android:textSize="15sp"
+            tools:text="Credit/Debit Card" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/cb_item"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/lepay_checkbox_unchecked"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/tv_cardnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/cb_item"
+                android:textColor="@android:color/black"
+                tools:text="**** 9695" />
+
+            <LinearLayout
+                android:id="@+id/ll_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/cb_item"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_one"
+                        android:layout_width="27dp"
+                        android:layout_height="17dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_two"
+                        android:layout_width="27dp"
+                        android:layout_height="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_three"
+                        android:layout_width="27dp"
+                        android:layout_height="17dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_four"
+                        android:layout_width="27dp"
+                        android:layout_height="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_cyber_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lepay_white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/view_cyber_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/lepay_bg_edittext"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_cbyer_suport_card_logo"
+                        android:layout_width="27dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/et_cyber_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:focusable="true"
+                        android:layout_toLeftOf="@+id/img_cbyer_suport_card_logo"
+                        android:hint="@string/lepay_hint_et_card_number"
+                        android:inputType="number"
+                        android:textColor="@color/c333333"
+                        android:textColorHint="@color/C888888"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_cbyer_suport_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tx_card_number_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/cF45353"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_card_number_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/lepay_white"
+                android:textSize="9sp"
+                android:textColor="@color/C888888"
+                android:text="@string/lepay_hint_et_card_number"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <View
+                    android:id="@+id/view_cyber_expiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/lepay_bg_edittext"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/et_cyber_expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:focusable="true"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:hint="@string/lepay_hint_et_expiry_date"
+                        android:textColor="@color/c333333"
+                        android:textColorHint="@color/C888888"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tx_cyber_expiry_date_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/cF45353"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tx_cyber_expiry_date_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/lepay_white"
+                    android:textSize="9sp"
+                    android:text="@string/lepay_hint_et_expiry_date"
+                    android:textColor="@color/C888888"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <View
+                    android:id="@+id/view_cyber_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/lepay_bg_edittext"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <EditText
+                            android:id="@+id/et_cyber_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:background="@android:color/transparent"
+                            android:editable="true"
+                            android:focusable="true"
+                            android:maxLength="4"
+                            android:hint="@string/lepay_hint_et_code"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/c333333"
+                            android:textColorHint="@color/C888888"
+                            android:textSize="12sp" />
+                        <ImageView
+                            android:id="@+id/img_cyber_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="center"
+                            android:src="@drawable/lepay_cvv_back" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tx_cyber_code_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/cF45353"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tx_cyber_code_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/lepay_white"
+                    android:textSize="9sp"
+                    android:text="@string/lepay_hint_et_code"
+                    android:textColor="@color/C888888"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            >
+            <TextView
+                android:id="@+id/tx_cyber_agee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/c333333"
+                android:textSize="12sp"
+                android:text="@string/lepay_abroad_subscription"
+                />
+            <CheckBox
+                android:id="@+id/checkbox_cyber_agree"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tx_cyber_agee"
+                android:background="@drawable/lepay_icon_select_after"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:saveEnabled="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lepay_white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <LinearLayout
+            android:id="@+id/ll_cyberpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:id="@+id/view_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/lepay_bg_edittext"
+                    android:editable="true"
+                    android:focusable="true"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#cacaca"
+                    android:textSize="13sp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+                        <EditText
+                            android:id="@+id/et_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:background="@android:color/transparent"
+                            android:editable="true"
+                            android:focusable="true"
+                            android:maxLength="4"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/c333333"
+                            android:textColorHint="@color/C888888"
+                            android:textSize="12dp" />
+                        <ImageView
+                            android:id="@+id/iv_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="center"
+                            android:src="@drawable/lepay_cvv_back" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/cF45353"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tx_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/lepay_white"
+                    android:textSize="9sp"
+                    android:textColor="@color/C888888"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_paypalpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_user" />
+
+            <TextView
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingLeft="40dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f1f1f1" />
+</LinearLayout>

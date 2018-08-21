@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_filter_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/filter_listView"
+        android:layout_width="match_parent"
+        android:layout_height="94.0dip"
+        android:padding="5.0dip"
+        android:scrollbars="none"
+        android:background="@android:color/black"/>
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_below="@+id/filter_listView"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/white"/>
+
+
+    <ImageView
+        android:background="@android:color/black"
+        android:id="@+id/btn_filter_cancle"
+        android:layout_below="@+id/divide_line"
+        android:layout_marginTop="2dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/letv_recorder_filter_cancle" />
+
+    <TextView
+        android:background="@android:color/black"
+        android:id="@+id/btn_filter_tips"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/divide_line"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="美颜"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:background="@android:color/black"
+        android:id="@+id/btn_filter_save"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/divide_line"
+        android:layout_marginTop="2dp"
+         android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/letv_recorder_filter_save"
+        />
+
+</RelativeLayout>

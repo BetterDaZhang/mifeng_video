@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 搜索结果页首页中缩略图下面的综艺条目中的“查看全部” -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_first_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="43dp"
+    android:paddingTop="13dp" >
+
+    <TextView
+        android:id="@+id/search_result_artstitle"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/art_item_title_marginleft"
+        android:text="@string/see_all"
+        android:textColor="@color/code1"
+        android:textSize="@dimen/search_result_art_title_textsize" />
+
+   <!--  <View
+        android:id="@+id/result_item_divider_two"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/search_result_artstitle"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="@dimen/search_result_art_item_divider_marginleft_right"
+        android:layout_marginRight="@dimen/search_result_art_item_divider_marginleft_right"
+        android:background="@color/code03" /> -->
+
+</RelativeLayout>

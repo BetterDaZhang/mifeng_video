@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <Button
+        android:id="@+id/play_detail_episode_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_episode_title"
+        android:gravity="center"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/play_detail_deputy_title" />
+
+    <TextView
+        android:id="@+id/play_detail_episode_item_cornor"
+        android:layout_width="22dp"
+        android:layout_height="12dp"
+        android:layout_alignTop="@id/play_detail_episode_item_title"
+        android:layout_alignRight="@id/play_detail_episode_item_title"
+        android:layout_gravity="top|right"
+        android:background="@color/code02"
+        android:textColor="@color/code7" 
+        android:gravity="center"
+        android:textSize="@dimen/play_detail_episode_type_size"
+        android:visibility="gone"/>
+
+</RelativeLayout>

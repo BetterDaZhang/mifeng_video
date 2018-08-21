@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 直播已结束 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="223dp"
+        android:layout_height="135dp"
+        android:background="@color/code010"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/clear_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/search_dialog_btn_marginleft"
+            android:paddingRight="@dimen/search_dialog_btn_marginright"
+            android:text="@string/letv_record_mobilelive_finish"
+            android:textColor="@color/code4"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/code06"
+            android:gravity="center"
+            android:text="@string/letv_record_exit_mobilelive"
+            android:textColor="@color/code3"
+            android:textSize="11dp" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_detail_recommend_height" >
+
+        <TextView
+            android:id="@+id/play_detail_arts_tiltle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/play_detail_head_left"
+            android:layout_marginTop="@dimen/play_detail_recommend_margin"
+            android:textColor="@color/code1"
+            android:textSize="@dimen/play_detail_main_title" />
+
+        <ImageView
+            android:id="@+id/play_detail_arts_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/play_detail_click_margin"
+            android:paddingRight="@dimen/play_detail_head_right"
+            android:paddingTop="@dimen/play_detail_recommend_margin"
+            android:src="@drawable/play_tv_more" />
+
+        <com.support.v7.recyclerview.FFocusCustomRecyclerView
+            android:id="@+id/play_detail_arts_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play_detail_arts_tiltle"
+            android:layout_marginLeft="@dimen/play_detail_head_left"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:listSelector="@color/code01"
+            android:paddingTop="@dimen/play_detail_episode_paddingtop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/play_detail_head_left"
+            android:layout_marginRight="@dimen/play_detail_head_left"
+            android:background="@@drawable/play_detail_xian" />
+    </RelativeLayout>
+
+</LinearLayout>

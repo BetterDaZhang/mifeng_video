@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/ad_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/play_back" />
+
+    <LinearLayout
+        android:id="@+id/ad_skiplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:background="@drawable/boss_skipad" >
+
+        <TextView
+            android:id="@+id/ad_skip"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:textColor="@color/code7"
+            android:gravity="center"
+            android:textSize="@dimen/play_ad_textsize" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="@string/vip_to_skip_ad"
+            android:gravity="center"
+            android:textColor="@color/code1"
+            android:textSize="@dimen/play_ad_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ad_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/play_details"
+        android:gravity="center"
+        android:text="@string/play_addetail"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip" >
+
+        <Button
+            android:id="@+id/ad_silence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/play_voice_on" />
+
+        <Button
+            android:id="@+id/ad_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/play_zoom" />
+    </LinearLayout>
+
+</FrameLayout>

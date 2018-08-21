@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="13dp"
+        android:text="@string/livetip"
+        android:textColor="@color/code4"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/liveusername"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/liveuser"
+            android:layout_width="0dip"
+            android:layout_height="43dp"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/liveuserhint"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/code4"
+            android:textColorHint="@color/code9"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/code03" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/livecardid"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/livecardid"
+            android:layout_width="0dip"
+            android:layout_height="43dp"
+            android:layout_marginLeft="13dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/liveidhint"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColor="@color/code4"
+            android:textColorHint="@color/code9"
+            android:textSize="13dp" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/editok"
+            android:visibility="gone"
+            android:src="@drawable/live_edit_ok"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/code03" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/livecardpic"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:text="@string/livecardpictip"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <com.letv.autoapk.ui.mobilelive.view.MobileLiveLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp" >
+
+        <ImageView
+            android:id="@+id/cardpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/live_bg_photo" />
+
+        <TextView
+            android:id="@+id/deletepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@drawable/live_btn_close" />
+    </com.letv.autoapk.ui.mobilelive.view.MobileLiveLayout>
+
+</LinearLayout>

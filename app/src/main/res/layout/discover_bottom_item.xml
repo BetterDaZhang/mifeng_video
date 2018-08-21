@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <com.letv.autoapk.widgets.NetImageView18_10
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/code3"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/code4"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:id="@+id/function_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dip"
+        android:layout_marginTop="13dip"
+        android:orientation="horizontal"
+        android:paddingLeft="19dp" >
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:drawableLeft="@drawable/discover_comment"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="@color/code4"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:drawableLeft="@drawable/discover_zan_gray"
+            android:drawablePadding="10dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="@color/code4"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/discover_collection"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/discover_share"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/code09" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/recommend_item_navigation_Top"
+    android:paddingLeft="@dimen/recommend_item_head_paddingLeft"
+    android:paddingRight="@dimen/recommend_item_head_paddingLeft"
+    android:paddingTop="@dimen/recommend_item_navigation_Top" >
+
+    <TextView
+        android:id="@+id/block_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/recommend_block_head_tag"
+        android:drawablePadding="5dp"
+        android:singleLine="true"
+        android:text="@string/hot_spots_today"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/recommend_item_bolck_title" />
+
+    <TextView
+        android:id="@+id/more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawablePadding="2dp"
+        android:drawableRight="@drawable/recommend_block_head_next"
+        android:singleLine="true"
+        android:text="@string/recommend_more"
+        android:textColor="@color/code2"
+        android:textSize="12dp" />
+
+</LinearLayout>

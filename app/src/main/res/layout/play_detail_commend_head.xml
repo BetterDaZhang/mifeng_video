@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/play_detail_head_left"
+    android:paddingRight="@dimen/play_detail_head_right"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp" >
+
+    <com.letv.autoapk.widgets.CircleImageView
+        android:id="@+id/play_detail_comment_icon"
+        android:layout_width="@dimen/play_detail_comment_icon"
+        android:layout_height="@dimen/play_detail_comment_icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play_comment_user" >
+    </com.letv.autoapk.widgets.CircleImageView>
+
+    <TextView
+        android:id="@+id/play_detail_comment_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/code3"
+        android:layout_marginLeft="6.7dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/play_detail_deputy_title" />
+
+    <EditText
+        android:id="@+id/play_detail_comment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_detail_comment_height"
+        android:layout_marginLeft="36.5dp"
+        android:background="@drawable/search_input_bg"
+        android:hint="@string/play_detail_comment_hint"
+        android:paddingLeft="7dp"
+        android:textSize="13dp"
+        android:textColorHint="@color/code9"
+        android:textColor="@color/code4" />
+
+</LinearLayout>

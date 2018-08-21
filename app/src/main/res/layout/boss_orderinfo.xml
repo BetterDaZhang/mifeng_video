@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code09"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/boss_order_title_top"
+        android:background="@color/code01"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/boss_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/boss_order_title_left"
+            android:layout_marginTop="@dimen/boss_order_title_top"
+            android:textColor="@color/code3"
+            android:textSize="@dimen/boss_order_title_size" />
+
+         <TextView
+             android:id="@+id/boss_order_describe"
+             style="@style/bossTitleStyle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/boss_order_title_left"
+             android:layout_marginTop="@dimen/boss_order_extire_top" />
+
+        <TextView
+            android:id="@+id/boss_order_num"
+            style="@style/bossTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/boss_order_title_left"
+            android:layout_marginTop="@dimen/boss_order_num_top"/>
+
+        <TextView
+            android:id="@+id/boss_order_expire"
+            style="@style/bossTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/boss_order_title_left"
+            android:layout_marginTop="@dimen/boss_order_extire_top" />
+
+        <TextView
+            android:id="@+id/boss_order_xian"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/boss_order_title_left"
+            android:layout_marginTop="@dimen/boss_order_extire_bottom"
+            android:background="@color/code03" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/bossTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="@dimen/boss_order_extire_top"
+                android:layout_marginRight="@dimen/boss_order_title_left"
+                android:layout_marginTop="@dimen/boss_order_extire_top"
+                android:text="@string/order_price" />
+
+            <TextView
+                android:id="@+id/boss_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="@dimen/boss_order_extire_top"
+                android:layout_marginRight="@dimen/boss_order_title_left"
+                android:layout_marginTop="@dimen/boss_order_extire_top"
+                android:textSize="17dp" 
+                android:textColor="#f82f2f"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/boss_order_divide"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/code03" />
+
+    <TextView
+        android:id="@+id/boss_order_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/boss_order_pay_top"
+        android:background="@drawable/boss_order_pay"
+        android:text="@string/boss_order_pay" 
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

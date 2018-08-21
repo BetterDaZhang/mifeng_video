@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lepay_bg_white"
+    android:orientation="vertical"
+    android:windowNoTitle="true">
+
+    <TextView
+        android:id="@+id/lepay_select_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:text="@string/lepay_select_dailog_title"
+        android:textSize="14sp" android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp">
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lepay_select_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#555555"
+                android:text="@string/lepay_select_dailog_cancel"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dbdbdb" />
+
+            <TextView
+                android:id="@+id/lepay_select_btn_ok"
+                android:layout_width="0.5dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/lepay_btnright_radius"
+                android:gravity="center"
+                android:text="@string/lepay_select_dailog_ok"
+                android:textColor="@color/lepay_white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

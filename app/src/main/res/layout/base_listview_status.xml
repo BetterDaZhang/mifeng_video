@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/code01"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="17dp"
+        android:drawableTop="@drawable/base_wifi_no"
+        android:gravity="center_horizontal"
+        android:text="@string/base_no_network"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/code3"
+        android:textSize="17dp" />
+
+    <!-- 下面这个button的id android:id="@+id/refresh_btn" -->
+
+    <TextView
+        android:id="@+id/tv_status_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+        android:text="@string/base_networkerror2"
+        android:textColor="@color/code4"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/base_retry_bg"
+        android:singleLine="true"
+        android:text="@string/base_retry"
+        android:textColor="@color/code6"
+        android:textSize="13dp" />
+
+</LinearLayout>

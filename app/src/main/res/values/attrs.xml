@@ -1,0 +1,80 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <!-- smoothViewpager -->
+    <declare-styleable name="smoothViewPager">
+
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="topShadowDrawable" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <!--
+    <declare-styleable name="TabPageIndicator">
+        <attr name="ptrTabPageBackground" format="reference|color" />
+        <attr name="ptrTabPageBackgroundAlpha" format="integer" />
+        <attr name="ptrLayoutWidth" format="integer" />
+        <attr name="ptrItemMargin" format="dimension" />
+        <attr name="ptrTextAppearance" format="reference" />
+        <attr name="ptrItemSelected" format="reference|color" />
+        <attr name="ptrItemUnselected" format="reference|color" />
+        <attr name="ptrItemFirstBackground" format="reference|color" />
+        <attr name="ptrItemMiddleBackground" format="reference|color" />
+        <attr name="ptrItemEndBackground" format="reference|color" />
+    </declare-styleable>
+    -->
+    <declare-styleable name="PlayControlContainer">
+        <attr name="hideanime" format="reference" />
+        <attr name="showanime" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RoundImageViewAttrs">
+        <attr name="sideSize" format="dimension"></attr>
+        <attr name="sideColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+    
+
+</resources>

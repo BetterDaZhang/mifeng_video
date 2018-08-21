@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/play_detail_head_left"
+    android:paddingRight="@dimen/play_detail_head_right" >
+
+    <RelativeLayout
+        android:id="@+id/play_arts_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/play_detail_episode_margin"
+        android:paddingTop="@dimen/play_detail_episode_margin" >
+
+        <TextView
+            android:id="@+id/play_arts_tiltle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/code1"
+            android:textSize="@dimen/play_detail_main_title" />
+
+        <ImageView
+            android:id="@+id/play_arts_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/play_detail_click_margin"
+            android:src="@drawable/play_tv_exit" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_detail_xian" />
+
+    <!-- com.letv.autoapk.widgets.HeaderGridView -->
+
+    <ListView
+        android:id="@+id/play_arts_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="@dimen/play_detail_episode_margin"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

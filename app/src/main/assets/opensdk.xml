@@ -1,0 +1,25 @@
+<opensdk>
+
+    <!--
+        <item>
+			<name>qq</name>
+			<id>1104998784</id>
+			<key>JxSI5VW290MbzkC8</key>
+		</item> 
+		<item>
+			<name>mm</name>
+			<id>wx1dd83609de5e1526</id>
+			<key>aede968810b60780155f350b3dcfa975</key>
+		</item>
+		<item>
+			<name>blog</name>
+			<id>886739862</id>
+			<redirecturl>https://api.weibo.com/oauth2/default.html</redirecturl>
+		</item>
+		<item>
+			<name>umeng</name>
+			<id>sfsfsfsf</id>
+		</item>
+    -->
+
+</opensdk>

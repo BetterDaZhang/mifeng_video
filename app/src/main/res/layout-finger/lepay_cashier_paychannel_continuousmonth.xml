@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+    <TextView
+            android:id="@+id/lepay_continuous_month_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/lepay_alipay_monthly_protocol"
+            android:textColor="@color/c333333"
+            android:textSize="12sp" />
+    <CheckBox
+            android:id="@+id/lepay_continuous_monthly_checkbox"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/lepay_continuous_month_tx"
+            android:background="@drawable/lepay_icon_select_after"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:saveEnabled="true" />
+</RelativeLayout>

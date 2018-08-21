@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_mine_setting_icon"
+        android:layout_width="@dimen/mine_history_list_item_image_height_width"
+        android:layout_height="@dimen/mine_history_list_item_image_height_width"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/mine_huanfu"
+        android:layout_marginTop="@dimen/mine_history_list_item_image_margin_top"
+        android:layout_marginBottom="@dimen/mine_history_list_item_image_margin_buttom"
+         />
+
+    <TextView
+        android:id="@+id/tv_mine_setting_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mine_history_list_item_text_margin_left"
+        android:layout_toRightOf="@id/iv_mine_setting_icon"
+        android:textColor="@color/code4"
+        android:textSize="@dimen/mine_history_list_item_text_size" />
+
+    <View
+        android:id="@+id/v_mine_setting_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:background="@color/code01" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/mine_collection_checkbox_marginleft"
+        android:layout_marginTop="42dp"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/mine_checkbox_selector"
+        android:focusable="false"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_played_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_collection_item_height"
+        android:layout_marginLeft="@dimen/mine_collection_checkbox_marginleft"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/checkbox" >
+
+        <com.letv.autoapk.widgets.NetImageView16_10
+            android:id="@+id/iv_played_records_video_icon"
+            android:layout_width="@dimen/mine_collection_item_width"
+            android:layout_height="@dimen/mine_collection_item_height"
+            android:background="@drawable/default_img_16_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_played_records_video_icon"
+            android:layout_alignTop="@+id/iv_played_records_video_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_played_records_video_icon" >
+
+            <TextView
+                android:id="@+id/tv_played_records_video_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:lineSpacingExtra="8dp"
+                android:maxEms="6"
+                android:maxLines="2"
+                android:text="tv_played_records_video_name"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_history_view_layout_text_name_size" />
+
+            <TextView
+                android:id="@+id/tv_played_records_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/search_result_art_item_guankan"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="tv_played_records_video_name"
+                android:textColor="@color/code4"
+                android:textSize="@dimen/mine_history_view_layout_text_time_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lepay_white">
+
+    <FrameLayout
+        android:id="@+id/lepay_title_fl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/lepay_halfpay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="16dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/lepay_title_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#c6c7cb"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/lepay_title_fl2"
+        android:layout_marginRight="16dp" />
+
+    <LinearLayout
+        android:id="@+id/lepay_paynow_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/lepay_pay_ll"
+        android:layout_below="@+id/lepay_title_fl"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lepay_half_pay_orderNo"
+                    android:textSize="13dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#898b94"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/lepay_tv_orderno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#898b94"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lepay_half_pay_payMoney"
+                    android:textSize="13dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#898b94"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lepay_tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#3f3e44"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/lepay_paylist_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/lepay_half_pay_item"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/lepay_tv_paylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lepay_half_ohters_paytype"
+                    android:gravity="right|center"
+                    android:textColor="#898b94"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/lepay_iv_listlgo"
+                    android:textSize="16dp"
+                    android:layout_gravity="right"/>
+
+                <ImageView
+                    android:id="@+id/lepay_iv_listlgo"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/lepay_icon_jiantou"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lepay_paytype_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/cfff8ee"
+        android:dividerHeight="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone"
+        android:background="@color/lepay_white"
+        android:layout_below="@+id/lepay_title_fl"
+        android:layout_above="@+id/lepay_pay_ll"/>
+
+
+    <LinearLayout
+        android:id="@+id/lepay_pay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp">
+
+        <View
+            android:id="@+id/lepay_line_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/lepay_tv_paynow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="#2395ee"
+            android:text="@string/lepay_half_pay_pawnow"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/lepay_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/lepay_half_pay_cancel"/>
+
+        <View
+            android:id="@+id/lepay_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/lepay_tv_cancel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/lepay_half_pay_cancel"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/lepay_gifImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/loading"
+        android:layout_below="@+id/lepay_title_fl"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/lepay_networkerror_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lepay_title_fl"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_above="@+id/lepay_pay_ll"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/lepay_tv_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lepay_half_pay_paySuccess"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/lepay_gifeeterrorImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lepay_tv_success_title"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/failed"
+            />
+
+        <TextView
+            android:id="@+id/lepay_tv_networkerror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lepay_gifeeterrorImageView"
+            android:layout_marginTop="18dp"
+            android:textColor="#898b94"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="12.4dp"
+    android:layout_marginLeft="@dimen/play_detail_head_left"
+    android:layout_marginRight="@dimen/play_detail_head_left"
+    android:background="@color/code01" >
+
+    <LinearLayout
+        android:id="@+id/play_describe_titlelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/play_describe_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title"
+            android:visibility="gone" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/play_describe_danmucount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/paly_detail_describe_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_describe_titlelay"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/play_detail_describe_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/play_detail_describe_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/play_detail_describe_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/play_detail_describe_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/play_detail_main_title" />
+    </LinearLayout>
+
+</RelativeLayout>

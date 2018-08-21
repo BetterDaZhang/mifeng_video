@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <!-- The PullToRefreshListView replaces a standard ListView widget. -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/pull_down"
+        ptr:ptrHeaderTextAppearance="@style/pullRefreshTextAppearance" />
+
+    <LinearLayout
+        android:id="@+id/offline_checkall_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_downlaod_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tv_offline_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/code06"
+            android:gravity="center"
+            android:text="@string/select_all_or_not"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_delect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/code04"
+            android:gravity="center"
+            android:text="@string/delete_num"
+            android:textColor="@color/code6"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</FrameLayout>

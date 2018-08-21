@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/code010"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mobile_live_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/letv_recorder_dialog_top"
+        android:layout_marginTop="@dimen/letv_recorder_dialog_top"
+        android:gravity="center"
+        android:textColor="@color/code3" />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/code06"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/dialog_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/code04"
+            android:gravity="center"
+            android:padding="10dip"
+            android:textColor="@color/code6"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</LinearLayout>

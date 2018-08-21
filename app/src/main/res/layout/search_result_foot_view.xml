@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/recommend_foot_logolay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/recommend_search__logo_margintop"
+        android:layout_marginTop="@dimen/recommend_search__logo_margintop"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/activity_item_divider_left"
+            android:layout_width="@dimen/recommend_search_divider_width"
+            android:layout_height="@dimen/recommend_search_divider_height"
+            android:layout_marginRight="7dp"
+            android:background="@color/code03" />
+
+        <TextView
+            android:id="@+id/activity_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/tab3"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/recommend_item_twolands_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/recommenm_point"
+            android:drawablePadding="3dp"
+            android:text="@string/recommend_foot_title"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/recommend_item_twolands_title" />
+
+        <ImageView
+            android:id="@+id/activity_item_divider_right"
+            android:layout_width="@dimen/recommend_search_divider_width"
+            android:layout_height="@dimen/recommend_search_divider_height"
+            android:layout_marginLeft="7dp"
+            android:background="@color/code03" />
+    </LinearLayout>
+
+</LinearLayout>

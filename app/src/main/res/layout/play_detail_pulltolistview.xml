@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.letv.autoapk.widgets.KeyboardShownLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/code01" >
+
+    <RelativeLayout
+        android:id="@+id/play_detail_input_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/code01"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <com.letv.autoapk.widgets.CircleImageView
+            android:id="@+id/play_detail__inputcomment_icon"
+            android:layout_width="@dimen/play_detail_comment_smallicon"
+            android:layout_height="@dimen/play_detail_comment_smallicon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_circle_img_small" >
+        </com.letv.autoapk.widgets.CircleImageView>
+
+        <TextView
+            android:id="@+id/play_detail_input_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/play_detail_send_comment_icon"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:textColor="@color/code7"
+            android:text="@string/play_send" />
+
+        <EditText
+            android:id="@+id/play_detail_input_comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_detail_comment_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/play_detail_input_comment_send"
+            android:layout_toRightOf="@id/play_detail__inputcomment_icon"
+            android:background="@drawable/search_input_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/play_detail_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/play_detail_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/play_detail_input_lay"
+        android:layout_below="@id/play_detail_head"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/code01"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/pull_down"
+        ptr:ptrHeaderTextAppearance="@style/pullRefreshTextAppearance" />
+
+</com.letv.autoapk.widgets.KeyboardShownLayout>

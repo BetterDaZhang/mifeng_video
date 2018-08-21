@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="str_turn_back">取消</string>
+    <string name="str_forward">前进</string>
+
+</resources>

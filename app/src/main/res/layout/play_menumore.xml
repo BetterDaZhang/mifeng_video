@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/menu_download"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingTop="34dp"
+        android:paddingBottom="34dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/play_more_download" />
+
+
+    <ImageView
+        android:id="@+id/menu_collect"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingTop="34dp"
+        android:paddingBottom="34dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/play_more_collection" />
+    
+</LinearLayout>
+    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#26ffffff" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/play_menushare" />
+
+</LinearLayout>

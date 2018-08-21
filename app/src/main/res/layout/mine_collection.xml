@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_played_records_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/code01"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+		android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextAppearance ="@style/pullRefreshTextAppearance"
+        ptr:ptrDrawable="@drawable/pull_down" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/ll_delect_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_downlaod_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tv_records_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:text="@string/mine_select_all_or_none"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_delect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/code04"
+            android:gravity="center"
+            android:text="@string/delete_num"
+            android:textColor="@color/code7"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</FrameLayout>

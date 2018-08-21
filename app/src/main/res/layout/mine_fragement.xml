@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code09"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/login_rl"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/code02" >
+
+            <RelativeLayout
+                android:id="@+id/rl_headlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <com.letv.autoapk.widgets.CircleImageView2
+                    android:id="@+id/user_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mine_default_head_img" >
+                </com.letv.autoapk.widgets.CircleImageView2>
+
+                <ImageView
+                    android:id="@+id/iv_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/user_icon"
+                    android:layout_alignRight="@+id/user_icon"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginRight="-3dp"
+                    android:background="@drawable/mine_vip"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_not_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/user_icon"
+                    android:singleLine="true"
+                    android:text="@string/login_mine"
+                    android:textColor="@color/code6"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_get_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:background="@drawable/mine_vip_renew"
+                    android:text="@string/mine_vip_renew"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_vip_center"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/code01"
+            android:paddingLeft="19dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mine_vip_center" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:text="@string/mine_vip_center"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_fragement_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="67dip"
+            android:background="@color/code03"/>
+
+        <LinearLayout
+            android:id="@+id/ll_history"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/code01"
+            android:paddingLeft="19dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mine_play_history" />
+
+            <TextView
+                android:id="@+id/tv_history_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:text="@string/mine_play_record"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_fragement_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="-1dp"
+            android:background="@color/code03" />
+
+        <LinearLayout
+            android:id="@+id/ll_offline"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/code01"
+            android:paddingLeft="19dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mine_download" />
+
+            <TextView
+                android:id="@+id/tv_offline_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:text="@string/mine_offline_video"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_fragement_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="67dip"
+            android:layout_marginTop="-1dp"
+            android:background="@color/code03" />
+
+        <LinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/code01"
+            android:paddingLeft="19dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mine_collection" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:text="@string/collect_text"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_fragement_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="34dp"
+            android:background="@color/code01"
+            android:paddingLeft="19dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mine_setting" />
+
+            <TextView
+                android:id="@+id/tv_setting_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/mine_arrow_right"
+                android:text="@string/mine_setting"
+                android:textColor="@color/code3"
+                android:textSize="@dimen/mine_fragement_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lepay_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lepay_paying_rl"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/lepay_pay_ll"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lepay_title_fl"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lepay_half_pay_paying"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lepay_paysuccess_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lepay_title_fl"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_above="@+id/lepay_pay_ll"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/lepay_tv_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lepay_half_pay_paySuccess"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/lepay_gifImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lepay_tv_success_title"
+            android:layout_marginTop="18dp"
+            />
+
+        <TextView
+            android:id="@+id/lepay_tv_paysuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lepay_gifImageView"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:textColor="#898b94"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lepay_pay_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="18dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/lepay_tv_rePay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="#2395ee"
+            android:text="@string/lepay_half_pay_rePay"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#c6c7cb"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/lepay_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/lepay_half_pay_cancel"/>
+
+    </LinearLayout>
+</RelativeLayout>

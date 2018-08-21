@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.letv.autoapk.widgets.NetImageView18_10
+        android:id="@+id/headline_vpimageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/headlineBrief"
+        style="@style/black_shadow_white16px"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/recommend_headvp_shadow_height"
+        android:layout_alignBottom="@id/headline_vpimageview"
+        android:background="@color/headvp_shadow"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="80dp"
+        android:singleLine="true"
+        android:textColor="@color/code7"
+        android:textSize="@dimen/recommend_headvp_brief" />
+
+    <TextView
+        android:id="@+id/headlineTitle"
+        style="@style/black_shadow_white16px"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/recommend_headvp_shadow_height"
+        android:layout_above="@id/headlineBrief"
+        android:background="@color/headvp_shadow"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="80dp"
+        android:singleLine="true"
+        android:textColor="@color/code7"
+        android:textSize="@dimen/recommend_headvp_title" />
+
+    <TextView
+        android:id="@+id/circulate_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headline_vpimageview"
+        android:layout_marginTop="@dimen/recommend_headvp_title_margin"
+        android:paddingLeft="@dimen/recommend_item_head_paddingLeft"
+        android:paddingRight="@dimen/recommend_item_head_paddingLeft"
+        android:singleLine="true"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/recommend_headvp_title"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/circulate_title"
+        android:layout_marginLeft="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginRight="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginTop="6dp"
+        android:background="@color/code03" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="92dp"
+    android:paddingTop="13dp">
+<!--  offline album item -->
+     <CheckBox
+        android:id="@+id/offline_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mine_collection_checkbox_marginleft"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/mine_checkbox_selector"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/offline_item_img"
+        android:layout_width="@dimen/search_item_img_width"
+        android:layout_height="@dimen/search_item_img_height"
+        android:layout_marginLeft="@dimen/offline_item_marginleft"
+        android:layout_toRightOf="@id/offline_checkbox" >
+
+        <com.letv.autoapk.widgets.NetImageView16_10
+            android:id="@+id/iv_offline_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/default_img_16_10"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/offline_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/offline_item_img"
+        android:layout_marginLeft="@dimen/offline_item_title_marginleft"
+        android:layout_marginRight="@dimen/search_item_title_marginright"
+        android:layout_marginTop="@dimen/offline_item_title_margintop"
+        android:layout_toRightOf="@id/offline_item_img"
+        android:maxLines="2"
+        android:textColor="@color/code3"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/offline_item_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/offline_item_img"
+        android:layout_marginLeft="@dimen/offline_item_title_marginleft"
+        android:layout_toRightOf="@id/offline_item_img"
+        android:singleLine="true"
+        android:text="download rate"
+        android:textColor="@color/code10"
+        android:textSize="11dp" />
+
+</RelativeLayout>

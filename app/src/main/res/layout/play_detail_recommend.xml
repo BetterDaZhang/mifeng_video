@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_detail_recommend_height" >
+
+        <TextView
+            android:id="@+id/play_detail_recommend_tiltle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/play_detail_head_left"
+            android:layout_marginTop="@dimen/play_detail_recommend_margin"
+            android:text="@string/recommend"
+            android:textColor="@color/code3"
+            android:textSize="@dimen/play_detail_main_title" />
+
+        <ImageView
+            android:id="@+id/play_detail_recommend_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/play_detail_recommend_tiltle"
+            android:layout_marginRight="@dimen/play_detail_head_right"
+            android:src="@drawable/play_tv_more" />
+
+        <com.support.v7.recyclerview.FFocusCustomRecyclerView
+            android:id="@+id/play_recommend_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play_detail_recommend_tiltle"
+            android:layout_marginLeft="@dimen/play_detail_head_left"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/play_detail_episode_paddingtop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/code03" />
+    </RelativeLayout>
+
+</LinearLayout>

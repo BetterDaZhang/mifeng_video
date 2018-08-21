@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommend_one_linear"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/recommend_item_paddingbottom" >
+
+    <com.letv.autoapk.widgets.NetImageView22_10
+        android:id="@+id/subject_head_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/subject_head_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginRight="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginTop="@dimen/recommend_subject_title_marginTop"
+        android:singleLine="true"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/recommend_item_twolands_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subject_head_brief"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginRight="@dimen/recommend_item_head_paddingLeft"
+        android:layout_marginTop="@dimen/recommend_subject_sectitle_marginTop"
+        android:singleLine="true"
+        android:textColor="@color/code4"
+        android:textSize="@dimen/recommend_item_twolands_brief" />
+
+</LinearLayout>

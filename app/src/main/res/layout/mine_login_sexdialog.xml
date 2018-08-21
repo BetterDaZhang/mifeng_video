@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/mine_male"
+        android:textColor="@color/code3"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/code03" />
+
+    <TextView
+        android:id="@+id/btn_female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/mine_famale"
+        android:textColor="@color/code3"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/code03" />
+
+  <!--   <TextView
+        android:id="@+id/btn_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/mine_secret"
+        android:textColor="@color/code4"
+        android:textSize="13dp" /> -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/code03" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/code03"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="@string/mine_dialog_cancel"
+        android:textColor="@color/code4"
+        android:textSize="13dp" >
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/code06"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/mine_dialog_cancel"
+            android:textColor="@color/code3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/dialog_ensure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/code04"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/mine_dialog_ensure"
+            android:textColor="@color/code6"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</LinearLayout>

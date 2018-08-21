@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/channel_item_bg_padding" >
+
+    <com.letv.autoapk.widgets.NetImageView22_10
+        android:id="@+id/channel_item_head_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" >
+    </com.letv.autoapk.widgets.NetImageView22_10>
+
+    <com.letv.autoapk.widgets.CircleImageView
+        android:id="@+id/channel_item_head_icon"
+        android:layout_width="@dimen/channel_item_largecircle_height"
+        android:layout_height="@dimen/channel_item_largecircle_height"
+        android:layout_marginTop="@dimen/channel_item_circle_margin"
+        android:scaleType="centerCrop"
+        app:border_color="@color/code01"
+        app:border_width="1dp" >
+    </com.letv.autoapk.widgets.CircleImageView>
+
+    <TextView
+        android:id="@+id/channel_item_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/channel_item_title" />
+
+    <TextView
+        android:id="@+id/channel_item_head_brief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/code4"
+        android:textSize="@dimen/channel_item_brief" />
+
+</LinearLayout>

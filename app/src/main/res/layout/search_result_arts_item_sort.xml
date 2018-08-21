@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 搜索结果页首页中缩略图下面的几个综艺条目 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_first_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="43dp"
+    android:paddingTop="11dp" >
+
+    <ImageView
+        android:id="@+id/iv_guankan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/search_result_art_iv_guankan_marginleft"
+        android:background="@drawable/search_result_art_item_guankan" />
+
+    <TextView
+        android:id="@+id/search_result_artstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/art_item_title_marginleft"
+        android:layout_toRightOf="@id/iv_guankan"
+        android:text="search_result_artstitle"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/search_result_art_title_textsize" />
+
+    <!--
+         <TextView
+        android:id="@+id/search_result__time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/search_result_art_publishtime_marginright"
+        android:text="2015-08-13"
+        android:textColor="@color/code2"
+        android:textSize="@dimen/search_result_art_publishtime_textsize" />    -->
+
+    <View
+        android:id="@+id/result_item_divider_two"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/iv_guankan"
+        android:layout_marginTop="11dp"
+        android:background="@color/code03" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip" >
+
+    <Button
+        android:id="@+id/play_downlaod_episode_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/play_episode_title"
+        android:gravity="center"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/play_detail_deputy_title" />
+
+    <TextView
+        android:id="@+id/play_downlaod_episode_item_cornor"
+        android:layout_width="22dp"
+        android:layout_height="12dp"
+        android:layout_alignRight="@id/play_downlaod_episode_item_title"
+        android:layout_alignTop="@id/play_downlaod_episode_item_title"
+        android:layout_gravity="top|right"
+        android:background="@color/code02"
+        android:gravity="center"
+        android:textColor="@color/code7"
+        android:textSize="@dimen/play_detail_episode_type_size" />
+
+    <ImageView
+        android:id="@+id/play_download_episode_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/play_down_check"
+        android:layout_alignRight="@id/play_downlaod_episode_item_title"
+        android:layout_alignBottom="@id/play_downlaod_episode_item_title"
+        android:visibility="gone"/>
+
+</RelativeLayout>

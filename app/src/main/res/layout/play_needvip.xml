@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 影片试看结束后，开通会员的页面。会员 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_to_getvip_bg" >
+
+    <Button
+        android:id="@+id/control_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/play_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/NoticeAfterTryandseeWhite"
+                android:text="@string/play_vip_end_tryandsee_notice"
+                android:visibility="visible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_get_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/play_getvip"
+                android:text="@string/mine_getvip"
+                android:gravity="left|center_vertical" 
+                android:paddingLeft="40dp"
+                android:textSize="10dp"
+                android:textColor="@android:color/white">
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/rl_tryandsee_notice_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_tryandsee_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/play_end_tryandsee_notice"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tryandsee_notice"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play_is_vip_with_can"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play_login_to_see"
+                        android:textColor="#ffb80f"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp" >
+
+            <TextView
+                style="@style/NoticeAfterTryandseeWhite"
+                android:text="@string/play_is_vip" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                style="@style/NoticeAfterTryandseeOrange"
+                android:text="@string/play_login_rightnow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

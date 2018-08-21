@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:id="@+id/lepay_gifImageView"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/lepay_loading_white"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--/>-->
+
+
+    <ImageView
+        android:id="@+id/lepay_progess_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lepay_progress" />
+
+    <TextView
+        android:id="@+id/lepay_progess_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

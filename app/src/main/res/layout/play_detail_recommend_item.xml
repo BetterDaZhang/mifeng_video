@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingRight="@dimen/play_detail_episode_paddingright">
+
+    <com.letv.autoapk.widgets.NetImageViewHorizontal16_10
+        android:id="@+id/play_detail_recommend_img"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/play_detail_recommend_img_height"
+        android:scaleType="centerCrop" 
+        android:background="@drawable/default_img_16_10"/>
+
+    <TextView
+        android:id="@+id/play_detail_recommend_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/recommend_item_twolands_title_marginTop"
+        android:singleLine="true"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/recommend_item_twolands_title" />
+
+</LinearLayout>

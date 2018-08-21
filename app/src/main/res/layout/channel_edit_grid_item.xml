@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.letv.autoapk.widgets.CircleImageView
+        android:id="@+id/channel_item_circle"
+        android:layout_width="@dimen/channel_item_smallcircle_height"
+        android:layout_height="@dimen/channel_item_smallcircle_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_circle_img_small"
+        app:border_color="@color/code01" 
+        app:border_width="0dp">
+    </com.letv.autoapk.widgets.CircleImageView>
+
+    <TextView
+        android:id="@+id/channel_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        android:singleLine="true"
+        android:text="@string/live"
+        android:textColor="@color/code3"
+        android:textSize="@dimen/channel_item_title" />
+
+</LinearLayout>

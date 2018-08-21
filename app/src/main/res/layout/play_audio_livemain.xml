@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/code01"
+    android:orientation="vertical" >
+
+    <com.letv.autoapk.ui.player.view.PlayerContainerLayout
+        android:id="@+id/playcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" >
+
+        <include
+            android:id="@+id/play_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_playview" />
+
+        <com.letv.autoapk.widgets.NetImageView
+            android:id="@+id/play_audio_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/play_danmaku"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_msg"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/ad_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_adview"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/control_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/play_audio_controller" />
+
+        <include
+            android:id="@+id/multi_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="@dimen/play_control_bottom_height"
+            layout="@layout/play_multicontroller"
+            android:visibility="invisible" />
+
+        <com.letv.autoapk.ui.player.view.PlayControlContainer
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:hideanime="@anim/slide_out_to_end"
+            app:showanime="@anim/slide_in_from_end" >
+
+            <ListView
+                android:id="@+id/menulist"
+                android:layout_width="@dimen/play_control_menu_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:background="@color/player_shadow"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#26ffffff"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </com.letv.autoapk.ui.player.view.PlayControlContainer>
+    </com.letv.autoapk.ui.player.view.PlayerContainerLayout>
+
+    <FrameLayout
+        android:id="@+id/detailbody"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

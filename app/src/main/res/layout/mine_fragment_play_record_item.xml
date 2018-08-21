@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.letv.autoapk.widgets.NetImageView16_10
+        android:id="@+id/iv_played_records_video_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_img_16_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/iv_played_records_video_img"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/tv_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/code3"
+            android:textSize="@dimen/mine_fragement_text_size" >
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_video_playing_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/code4"
+            android:textSize="@dimen/mine_history_view_layout_text_time_size" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

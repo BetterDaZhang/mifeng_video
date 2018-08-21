@@ -1,0 +1,80 @@
+<com.letv.autoapk.ui.mobilelive.view.MobileLiveLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.letv.autoapk.widgets.NetImageView
+        android:id="@+id/live_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/live_default_bg"
+        android:tint="#4D000000" />
+
+    <TextView
+        android:id="@+id/livingnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/live_living"
+        android:gravity="center"
+        android:text="@string/livingnow"
+        android:textColor="@android:color/white"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/livetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="21dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/live_bottom_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="18dp"
+        android:paddingLeft="13dp" >
+
+        <com.letv.autoapk.widgets.CircleImageView2
+            android:id="@+id/head_icon"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/mine_default_head_img"
+            app:borderColor="@android:color/white"
+            app:borderWidth="1dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="9dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.letv.autoapk.ui.mobilelive.view.MobileLiveLayout>
